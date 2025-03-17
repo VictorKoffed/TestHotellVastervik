@@ -504,3 +504,4 @@ C:\Users\meist\Desktop\BookingAPI v0.2 (dev)\obj\Debug\net9.0\refint\BookingAPI.
 C:\Users\meist\Desktop\BookingAPI v0.2 (dev)\obj\Debug\net9.0\BookingAPI.pdb
 C:\Users\meist\Desktop\BookingAPI v0.2 (dev)\obj\Debug\net9.0\BookingAPI.genruntimeconfig.cache
 C:\Users\meist\Desktop\BookingAPI v0.2 (dev)\obj\Debug\net9.0\ref\BookingAPI.dll
+C:\Users\meist\Desktop\BookingAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
