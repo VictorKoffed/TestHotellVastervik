@@ -39,6 +39,9 @@ namespace MenuAPI.Controllers
         [HttpPost("create")]
         public async Task<IActionResult> CreateProduct([FromBody] Product model)
         {
+            if (model == null)
+                return BadRequest("Invalid product data");
+
             _context.Products.Add(model);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetProduct), new { productId = model.ProductID }, model);
@@ -55,6 +58,8 @@ namespace MenuAPI.Controllers
             product.ProductName = model.ProductName;
             product.Category = model.Category;
             product.Price = model.Price;
+            product.IsVegetarian = model.IsVegetarian;
+            product.ImageURL = model.ImageURL;
 
             await _context.SaveChangesAsync();
             return Ok(product);
@@ -81,6 +86,14 @@ namespace MenuAPI.Controllers
                 .Where(p => (p.Category ?? "").ToLower() == category.ToLower())
                 .ToListAsync();
 
+            return Ok(products);
+        }
+
+        // ✅ Hämta alla vegetariska produkter
+        [HttpGet("vegetarian")]
+        public async Task<IActionResult> GetVegetarianProducts()
+        {
+            var products = await _context.Products.Where(p => p.IsVegetarian).ToListAsync();
             return Ok(products);
         }
     }

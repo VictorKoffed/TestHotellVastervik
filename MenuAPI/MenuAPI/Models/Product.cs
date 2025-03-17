@@ -16,5 +16,9 @@ namespace MenuAPI.Models
 
         [Required]
         public decimal? Price { get; set; }
+
+        public bool IsVegetarian { get; set; } = false;
+
+        public string? ImageURL { get; set; }
     }
 }
