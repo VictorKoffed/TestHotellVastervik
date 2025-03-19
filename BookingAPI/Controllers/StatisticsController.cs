@@ -61,6 +61,12 @@ namespace LoginService.Controllers
 
         }
 
+        [HttpGet("health")] // Ny hälsokontroll endpoint
+        public IActionResult HealthCheck()
+        {
+            return Ok(new { status = "API Running" });
+        }
+
     }
 
 }
