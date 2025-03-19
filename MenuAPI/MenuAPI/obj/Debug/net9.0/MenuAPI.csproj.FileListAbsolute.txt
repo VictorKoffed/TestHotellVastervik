@@ -58,13 +58,11 @@ C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Composition.Runti
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Composition.TypedParts.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Configuration.ConfigurationManager.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Drawing.Common.dll
-C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Formats.Asn1.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Memory.Data.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Runtime.Caching.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Security.Permissions.dll
-C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Text.Json.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\System.Windows.Extensions.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\bin\Debug\net9.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -166,3 +164,4 @@ C:\Users\meist\Desktop\MenuAPI\MenuAPI\obj\Debug\net9.0\refint\MenuAPI.dll
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.pdb
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.genruntimeconfig.cache
 C:\Users\meist\Desktop\MenuAPI\MenuAPI\obj\Debug\net9.0\ref\MenuAPI.dll
+C:\Users\meist\Desktop\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
