@@ -1,7 +1,20 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\meist\\Desktop\\MenuAPI\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\migrations\\20250319151241_addapiusagelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\migrations\\20250319151241_addapiusagelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,15 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{f37f5141-198e-4181-9582-7b026ee8f915}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1040628595:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+              "Name": "ST:84591601:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Bookmark",
@@ -25,7 +34,88 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1124178825:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+              "Name": "ST:869042827:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:717345755:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:380706444:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:705646019:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1841664479:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:633795525:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1754193193:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1037935751:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1670642963:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1526272134:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1201332559:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1040628595:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "MenuAPI\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "MenuAPI\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T11:05:26.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20250319151241_AddApiUsageLog.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
+              "RelativeDocumentMoniker": "MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
+              "RelativeToolTip": "MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:12:41.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StatisticsController.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\StatisticsController.cs",
+              "RelativeDocumentMoniker": "MenuAPI\\Controllers\\StatisticsController.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\StatisticsController.cs",
+              "RelativeToolTip": "MenuAPI\\Controllers\\StatisticsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T14:56:28.614Z"
             }
           ]
         }
