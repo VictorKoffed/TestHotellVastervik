@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang-main (1)\\MVCRestaurang-main\\restaurangprojekt.csproj",
+      "projectUniqueName": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
       "projectName": "restaurangprojekt",
-      "projectPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang-main (1)\\MVCRestaurang-main\\restaurangprojekt.csproj",
+      "projectPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
       "packagesPath": "C:\\Users\\meist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang-main (1)\\MVCRestaurang-main\\obj\\",
+      "outputPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang\\MVCRestaurang-main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

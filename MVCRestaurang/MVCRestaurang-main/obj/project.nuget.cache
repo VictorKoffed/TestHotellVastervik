@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WiKlu9vfB+0=",
+  "dgSpecHash": "SrdbfSECJqc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang-main (1)\\MVCRestaurang-main\\restaurangprojekt.csproj",
+  "projectFilePath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\Våra APIer\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\meist\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
