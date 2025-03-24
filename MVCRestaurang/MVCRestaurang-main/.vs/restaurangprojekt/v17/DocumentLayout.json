@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\mvcrestaurang\\mvcrestaurang-main\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\mvcrestaurang\\mvcrestaurang-main\\controllers\\productcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|solutionrelative:controllers\\productcustomercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -35,40 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductCustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Controllers\\ProductCustomerController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProductCustomerController.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Controllers\\ProductCustomerController.cs",
-              "RelativeToolTip": "Controllers\\ProductCustomerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T19:35:57.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductCustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\ProductCustomerService.cs",
-              "RelativeDocumentMoniker": "Services\\ProductCustomerService.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\ProductCustomerService.cs",
-              "RelativeToolTip": "Services\\ProductCustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T19:35:17.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookingCustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\BookingCustomerService.cs",
-              "RelativeDocumentMoniker": "Services\\BookingCustomerService.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\BookingCustomerService.cs",
-              "RelativeToolTip": "Services\\BookingCustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T19:34:30.583Z",
+              "WhenOpened": "2025-03-24T20:21:06.183Z",
               "EditorCaption": ""
             },
             {
@@ -129,7 +107,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "ProductCustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Controllers\\ProductCustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductCustomerController.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Controllers\\ProductCustomerController.cs",
+              "RelativeToolTip": "Controllers\\ProductCustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T19:35:57.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductCustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\ProductCustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\ProductCustomerService.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\ProductCustomerService.cs",
+              "RelativeToolTip": "Services\\ProductCustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T19:35:17.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingCustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\BookingCustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\BookingCustomerService.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Services\\BookingCustomerService.cs",
+              "RelativeToolTip": "Services\\BookingCustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T19:34:30.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Views\\BookingCustomer\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\BookingCustomer\\Index.cshtml",
@@ -137,12 +152,11 @@
               "RelativeToolTip": "Views\\BookingCustomer\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T19:32:10.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T19:32:10.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MVCRestaurang\\MVCRestaurang-main\\Views\\ProductCustomer\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\ProductCustomer\\Index.cshtml",
@@ -150,8 +164,7 @@
               "RelativeToolTip": "Views\\ProductCustomer\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T19:32:05.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T19:32:05.262Z"
             }
           ]
         }

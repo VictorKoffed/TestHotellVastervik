@@ -52,6 +52,54 @@ namespace MenuAPI.Controllers
             return Ok(order);
         }
 
+        // ✅ Hämta alla ordrar
+        [HttpGet]
+        public async Task<IActionResult> GetAllOrders()
+        {
+            var orders = await _context.Orders
+                .Include(o => o.OrderProducts)
+                .ThenInclude(op => op.Product)
+                .ToListAsync();
+
+            return Ok(orders);
+        }
+
+        // ✅ Uppdatera en order
+        [HttpPut("{orderId}")]
+        public async Task<IActionResult> UpdateOrder(int orderId, [FromBody] CreateOrderDto model)
+        {
+            var order = await _context.Orders.FindAsync(orderId);
+
+            if (order == null)
+                return NotFound("Order not found");
+
+            // Uppdatera egenskaper
+            order.UserID = model.UserID;
+            order.RoomID = model.RoomID;
+            order.IsRoomService = model.IsRoomService;
+            order.LunchQuantity = model.LunchQuantity;
+
+            _context.Entry(order).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+
+            return Ok(order);
+        }
+
+        // ✅ Ta bort en order
+        [HttpDelete("{orderId}")]
+        public async Task<IActionResult> DeleteOrder(int orderId)
+        {
+            var order = await _context.Orders.FindAsync(orderId);
+
+            if (order == null)
+                return NotFound("Order not found");
+
+            _context.Orders.Remove(order);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
         // ✅ Lägg till en produkt i en order
         [HttpPost("{orderId}/addProduct")]
         public async Task<IActionResult> AddProductToOrder(int orderId, [FromBody] AddProductToOrderDto model)

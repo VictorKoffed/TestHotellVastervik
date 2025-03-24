@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\controllers\\statisticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\migrations\\20250319151241_addapiusagelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\migrations\\20250319151241_addapiusagelog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,40 +78,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "MenuAPI\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "MenuAPI\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "MenuAPI\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "MenuAPI\\Controllers\\OrderController.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAswLAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:05:26.193Z",
+              "WhenOpened": "2025-03-24T20:12:10.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250319151241_AddApiUsageLog.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
-              "RelativeDocumentMoniker": "MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
-              "RelativeToolTip": "MenuAPI\\Migrations\\20250319151241_AddApiUsageLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "MenuAPI\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Models\\Order.cs",
+              "RelativeToolTip": "MenuAPI\\Models\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T15:12:41.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StatisticsController.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\StatisticsController.cs",
-              "RelativeDocumentMoniker": "MenuAPI\\Controllers\\StatisticsController.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\StatisticsController.cs",
-              "RelativeToolTip": "MenuAPI\\Controllers\\StatisticsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-19T14:56:28.614Z"
+              "WhenOpened": "2025-03-24T20:10:51.539Z",
+              "EditorCaption": ""
             }
           ]
         }

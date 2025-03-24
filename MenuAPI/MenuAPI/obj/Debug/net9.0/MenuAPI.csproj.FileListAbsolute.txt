@@ -497,10 +497,10 @@ C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.MenuAPI.props
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.MenuAPI.props
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.csproj.Up2Date
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.dll
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\refint\MenuAPI.dll
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.pdb
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.genruntimeconfig.cache
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\ref\MenuAPI.dll
+C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

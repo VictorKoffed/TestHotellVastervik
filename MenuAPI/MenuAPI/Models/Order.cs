@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace MenuAPI.Models
 {
@@ -16,8 +17,10 @@ namespace MenuAPI.Models
         public decimal TotalSum { get; set; }
         public bool IsRoomService { get; set; }
         public int LunchQuantity { get; set; }
+        public bool IsCompleted { get; set; } = false;
 
         // Navigationsproperty
+        [JsonIgnore]
         public ICollection<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>(); // 🛠 Fixa null-problemet
     }
 }

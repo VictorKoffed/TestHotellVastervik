@@ -17,6 +17,8 @@ namespace restaurangprojekt.Models
 
         public int LunchQuantity { get; set; }
 
+        public bool IsCompleted { get; set; } = false;
+
         [JsonProperty("orderProducts")]
         public List<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>();
 
