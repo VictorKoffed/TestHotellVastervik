@@ -1,0 +1,16 @@
+﻿@model List<restaurangprojekt.Models.Order>
+
+<h2>Ordrar</h2>
+<table>
+    <tr><th>Order ID</th><th>Datum</th><th>Totalt</th><th>RoomService</th></tr>
+    @foreach (var order in Model)
+    {
+        <tr>
+            <td>@order.OrderID</td>
+            <td>@order.OrderTime.ToShortDateString()</td>
+            <td>@order.TotalSum kr</td>
+            <td>@(order.IsRoomService ? "Ja" : "Nej")</td>
+        </tr>
+    }
+</table>
+<a href="@Url.Action("Create")">Skapa Order</a>

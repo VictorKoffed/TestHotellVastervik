@@ -1,0 +1,14 @@
+﻿@model restaurangprojekt.Models.Product
+
+@{
+    ViewData["Title"] = "Ta bort produkt";
+}
+
+<h1>🗑️ Ta bort @Model.ProductName?</h1>
+<p>Är du säker på att du vill ta bort denna produkt permanent?</p>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="ProductID" />
+    <button type="submit" class="btn btn-danger">⚠️ Ta bort permanent</button> |
+    <a asp-action="Index" class="btn btn-secondary">⬅️ Avbryt</a>
+</form>

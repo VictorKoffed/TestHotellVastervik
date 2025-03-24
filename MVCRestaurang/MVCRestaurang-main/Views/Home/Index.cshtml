@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    
+</head>
+<body>
+    <!-- Hero-sektionen-->
+    <section class="hero">
+        <img src="~/images/image4.png" alt="Resturangen">
+        <button>Boka bord</button>
+    </section>
+
+    <!-- Menybeskrivning-->
+    <section class="menu-section">
+        <div class="menu-text">
+            <h2> En meny för alla sinnen</h2>
+            <p>
+                Här hittar du allt från delikata förrätter och saftiga kötträtter till fräscha vegetariska alternativ och havets bästa skaldjur. Avrunda måltiden med en utsökt dessert och ett passande vin från vår exklusiva vinlista.
+                Välkommen till en smakupplevelse utöver det vanliga!
+            </p>
+            <div class="buttons">
+                <button id="menuButton" class="btn menu-btn">Se meny</button>
+                <button id="drinkMenuButton" class="btn menu-btn">Se dryckesmeny</button>
+            </div>
+        </div>
+        <img src="~/images/image5.png" alt="Vinglas">
+    </section>
+
+    <!-- Resturangbeskrivning-->
+    <section class="restaurant-section">
+        <h2> Restaurang Lumiére - Smaker i världsklass</h2>
+        <p>
+            I Restaurang Lumière förenas passion för mat med noggrant utvalda råvaror och en känsla för detaljer.
+            Vårt kök erbjuder en meny inspirerad av både klassiska och moderna smaker, tillagade med kärlek och kreativitet.
+            Vi strävar efter att skapa en gastronomisk upplevelse där varje rätt är en balans mellan smak, textur och presentation.
+            Oavsett om du njuter av en av våra signaturrätter, en utsökt dessert eller ett noggrant utvalt vin,
+            kan du vara säker på att varje måltid är en upplevelse i sig.
+        </p>
+    </section>
+
+    <!-- Öppettider-->
+    <section class="opening-hours">
+        <h3>Öppettider</h3>
+        <p>Måndag - Torsdag: 12:00 - 00:00</p>
+        <p>Fredag - Lördag: 12:00 - 02:00</p>
+        <p>Köket stänger kl 23:00</p>
+    </section>
+
+    <div id="bookingModal" class="booking-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Boka bord</h2>
+            <p>Välj datum och tid för bokning</p>
+
+            <label for="guest">Antal personer</label>
+            <select id="guests">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="date">Datum</label>
+            <input type="date" id="date">
+            <select id="time">
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+                <option value="21:00">21:00</option>
+            </select>
+            <!-- Ny textarea för önskemål -->
+            <label for="requests">Önskemål</label>
+            <textarea id="requests" placeholder="Skriv dina önskemål här, t.ex. 'Vegetarisk mat' eller 'Bord vid fönster'..." rows="4"></textarea>
+
+            <button id="confirmBooking">Boka</button>
+           
+        </div>
+    </div>
+
+ 
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<restaurangprojekt.Models.Product>
+
+@{
+    ViewData["Title"] = "Alla Produkter";
+}
+
+<h1>🍽️ Alla Produkter</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">➕ Lägg till ny produkt</a>
+</p>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Namn</th>
+            <th>Kategori</th>
+            <th>Pris</th>
+            <th>Vegetarisk</th>
+            <th>Bild</th>
+            <th>Åtgärder</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ProductName</td>
+                <td>@item.Category</td>
+                <td>@item.Price.ToString("C")</td>
+                <td>@(item.IsVegetarian ? "🌱 Ja" : "🍖 Nej")</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(item.ImageURL))
+                    {
+                        <img src="@item.ImageURL" style="width:60px;height:auto;" alt="Bild" />
+                    }
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.ProductID" class="btn btn-info btn-sm">Detaljer</a>
+                    <a asp-action="Edit" asp-route-id="@item.ProductID" class="btn btn-warning btn-sm">Redigera</a>
+                    <a asp-action="Delete" asp-route-id="@item.ProductID" class="btn btn-danger btn-sm">Ta bort</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

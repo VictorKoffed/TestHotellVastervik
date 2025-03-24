@@ -1,0 +1,34 @@
+﻿@model restaurangprojekt.Models.Product
+
+@{
+    ViewData["Title"] = "Produktdetaljer";
+}
+
+<h1>📋 @Model.ProductName</h1>
+
+<div class="card mb-3">
+    <div class="row g-0">
+        @if (!string.IsNullOrEmpty(Model.ImageURL))
+        {
+            <div class="col-md-4">
+                <img src="@Model.ImageURL" class="img-fluid rounded-start" alt="Bild">
+            </div>
+        }
+        <div class="col-md-8">
+            <div class="card-body">
+                <h4 class="card-title">@Model.ProductName</h4>
+                <p class="card-text">@Model.Description</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Kategori:</strong> @Model.Category</li>
+                    <li class="list-group-item"><strong>Pris:</strong> @Model.Price.ToString("C")</li>
+                    <li class="list-group-item">
+                        <strong>Vegetarisk:</strong> @(Model.IsVegetarian ? "🌱 Ja" : "🍖 Nej")
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a asp-action="Edit" asp-route-id="@Model.ProductID" class="btn btn-warning">✏️ Redigera</a> |
+<a asp-action="Index" class="btn btn-secondary">⬅️ Tillbaka</a>

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meny</title>
+    
+    <link rel="stylesheet" href="~/css/menu.css">
+
+</head>
+<body>
+<div class="menu-container">
+<div class="filter-section">
+    <label for="room">Rum</label>
+    <select id="room">
+        <option value="">Välj Rum</option>
+        <option value="101">101</option>
+        <option value="102">102</option>
+    </select>
+
+    <label for="service">Välj typ av tjänst</label>
+    <select id="service">
+        <option value="">Välj tjänst</option>
+        <option value="Restaurang">Restauraung</option>
+        <option value="RoomService">Rumservice</option>
+            </select>
+</div>
+<!-- Kategorival -->
+<h2>Meny</h2>
+<div class="menu-categories"> 
+    <button class="active">Lunch</button>
+    <button>Förrätt</button>
+   <button>Varmrätt</button>
+            <button>Efterrätt</button>
+            <button>Drycker</button>
+
+
+        </div>
+        <!-- Menyobjekt -->
+        <div class="menu-items">
+            <div class="menu-item">
+                <div class="image-placeholder">Bild</div>
+                <div class="item-details">
+                    <h3>Meny objekt 1</h3>
+                    <p>
+                        Allergiinfo:
+                        <select>
+                            <option>Ja</option>
+                            <option>Nej</option>
+                        </select>
+                    </p>
+                    <p>Vegetariskt: Ja/Nej</p>
+                    <div class="quantity-selector">
+                        <button>-</button>
+                        <span>0</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="image-placeholder">Bild</div>
+                <div class="item-details">
+                    <h3>Meny objekt 2</h3>
+                    <p>
+                        Allergiinfo:
+                        <select>
+                            <option>Ja</option>
+                            <option>Nej</option>
+                        </select>
+                    </p>
+                    <p>Vegetariskt: Ja/Nej</p>
+                    <div class="quantity-selector">
+                        <button>-</button>
+                        <span>0</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+ </body>
+</html>

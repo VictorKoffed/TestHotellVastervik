@@ -1,0 +1,52 @@
+﻿@model IEnumerable<restaurangprojekt.Models.Booking>
+
+@{
+    ViewData["Title"] = "Booking - Index";
+}
+
+<h2>Alla bokningar</h2>
+
+<p>
+    <a asp-action="Create">Skapa ny bokning</a>
+</p>
+
+<table class="table" id="bookingTable">
+    <thead>
+        <tr>
+            <th>BookingID</th>
+            <th>UserID</th>
+            <th>TableID_FK</th>
+            <th>RoomID</th>
+            <th>ReservedDate</th>
+            <th>GuestCount</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.BookingID</td>
+                    <td>@item.UserID</td>
+                    <td>@item.TableID_FK</td>
+                    <td>@item.RoomID</td>
+                    <td>@item.ReservedDate</td>
+                    <td>@item.GuestCount</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.BookingID">Detaljer</a> |
+                        <a asp-action="Edit" asp-route-id="@item.BookingID">Redigera</a> |
+                        <a asp-action="Delete" asp-route-id="@item.BookingID">Radera</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7">Inga bokningar.</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿@model restaurangprojekt.Models.Order
+
+<h2>Orderdetaljer</h2>
+<table>
+    <tr><th>Order ID:</th><td>@Model.OrderID</td></tr>
+    <tr><th>Orderdatum:</th><td>@Model.OrderTime</td></tr>
+    <tr><th>Totalt pris:</th><td>@Model.TotalSum kr</td></tr>
+    <tr><th>RoomService:</th><td>@(Model.IsRoomService ? "Ja" : "Nej")</td></tr>
+</table>
+
+<h3>Produkter i ordern</h3>
+<table>
+    <tr><th>Produkt ID</th><th>Antal</th></tr>
+    @foreach (var item in Model.OrderProducts)
+    {
+        <tr>
+            <td>@item.ProductID_FK</td>
+            <td>@item.Amount</td>
+        </tr>
+    }
+</table>
+
+<a href="@Url.Action("Index", "Home")">Tillbaka till startsidan</a>

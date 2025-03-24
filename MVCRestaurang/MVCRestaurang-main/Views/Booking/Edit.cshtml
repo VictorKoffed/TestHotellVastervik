@@ -1,0 +1,38 @@
+﻿@model restaurangprojekt.Models.Booking
+
+@{
+    ViewData["Title"] = "Booking - Edit";
+}
+
+<h2>Redigera bokning</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="BookingID" />
+
+    <div class="form-group">
+        <label asp-for="UserID"></label>
+        <input asp-for="UserID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="TableID_FK"></label>
+        <input asp-for="TableID_FK" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="RoomID"></label>
+        <input asp-for="RoomID" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ReservedDate"></label>
+        <input asp-for="ReservedDate" class="form-control" type="datetime-local" />
+    </div>
+    <div class="form-group">
+        <label asp-for="GuestCount"></label>
+        <input asp-for="GuestCount" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Spara</button>
+</form>
+
+<div>
+    <a asp-action="Index">Tillbaka</a>
+</div>
