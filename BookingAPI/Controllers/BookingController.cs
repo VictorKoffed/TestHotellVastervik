@@ -6,7 +6,7 @@ namespace BookingAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BookingController : Controller
+    public class BookingController : ControllerBase  // Ändrat till ControllerBase eftersom vi inte behöver hela Controller-klassen här
     {
         private readonly BookingDbContext _context;
 
@@ -15,13 +15,25 @@ namespace BookingAPI.Controllers
             _context = context;
         }
 
+        // GET: api/Booking
         [HttpGet]
+        [Produces("application/json")] // Explicit ange att svaret ska vara JSON
         public async Task<ActionResult<IEnumerable<Booking>>> GetBookings()
         {
-            return await _context.Bookings.Include(b => b.DinnerTable).ToListAsync();
+            var bookings = await _context.Bookings.Include(b => b.DinnerTable).ToListAsync();
+
+            // Kontrollera om det finns några bokningar
+            if (bookings == null || !bookings.Any())
+            {
+                return NotFound("Inga bokningar hittades.");
+            }
+
+            return Ok(bookings); // Returnera data i JSON-format
         }
 
+        // GET: api/Booking/5
         [HttpGet("{id}")]
+        [Produces("application/json")] // Explicit ange att svaret ska vara JSON
         public async Task<ActionResult<Booking>> GetBooking(int id)
         {
             var booking = await _context.Bookings.Include(b => b.DinnerTable)
@@ -29,13 +41,15 @@ namespace BookingAPI.Controllers
 
             if (booking == null)
             {
-                return NotFound();
+                return NotFound("Bokningen hittades inte.");
             }
 
-            return booking;
+            return Ok(booking); // Returnera data i JSON-format
         }
 
+        // POST: api/Booking
         [HttpPost]
+        [Produces("application/json")] // Explicit ange att svaret ska vara JSON
         public async Task<ActionResult<Booking>> CreateBooking(Booking booking)
         {
             // Kontrollera om bordet finns
@@ -53,7 +67,6 @@ namespace BookingAPI.Controllers
                 .Include(b => b.DinnerTable)
                 .FirstOrDefaultAsync(b => b.BookingID == booking.BookingID);
 
-            // Kontrollera att savedBooking inte är null
             if (savedBooking == null)
             {
                 return Problem("Ett oväntat fel uppstod: Bokningen sparades, men kunde inte hämtas.");
@@ -62,8 +75,9 @@ namespace BookingAPI.Controllers
             return CreatedAtAction(nameof(GetBooking), new { id = savedBooking.BookingID }, savedBooking);
         }
 
-
+        // PUT: api/Booking/5
         [HttpPut("{id}")]
+        [Produces("application/json")] // Explicit ange att svaret ska vara JSON
         public async Task<IActionResult> UpdateBooking(int id, Booking booking)
         {
             if (id != booking.BookingID)
@@ -71,14 +85,12 @@ namespace BookingAPI.Controllers
                 return BadRequest("Booking ID i URL matchar inte objektet.");
             }
 
-            // Kontrollera om bokningen existerar
             var existingBooking = await _context.Bookings.FindAsync(id);
             if (existingBooking == null)
             {
                 return NotFound("Bokningen hittades inte.");
             }
 
-            // Kontrollera om bordet finns
             var tableExists = await _context.DinnerTables.AnyAsync(t => t.TableID == booking.TableID_FK);
             if (!tableExists)
             {
@@ -96,10 +108,12 @@ namespace BookingAPI.Controllers
                 return Conflict("En annan process har uppdaterat denna bokning. Försök igen.");
             }
 
-            return NoContent();
+            return NoContent(); // Ingen data att returnera vid en uppdatering
         }
 
+        // DELETE: api/Booking/5
         [HttpDelete("{id}")]
+        [Produces("application/json")] // Explicit ange att svaret ska vara JSON
         public async Task<IActionResult> DeleteBooking(int id)
         {
             var booking = await _context.Bookings.FindAsync(id);
@@ -112,7 +126,7 @@ namespace BookingAPI.Controllers
             _context.Bookings.Remove(booking);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return NoContent(); // Ingen data att returnera vid en radering
         }
     }
 }
