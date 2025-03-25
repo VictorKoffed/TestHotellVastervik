@@ -110,7 +110,8 @@ namespace restaurangprojekt.Controllers
             return View(order);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var success = await _orderService.DeleteOrderAsync(id);
