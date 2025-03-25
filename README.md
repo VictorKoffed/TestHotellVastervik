@@ -11,3 +11,5 @@ Test till att ladda upp filer till GitHub Hotell projekt
 7. Lås Controllers efter användarroller
 8. Fixa CSS.
 9. Fixa bokningslogic till Bokningar
+
+ändring test
