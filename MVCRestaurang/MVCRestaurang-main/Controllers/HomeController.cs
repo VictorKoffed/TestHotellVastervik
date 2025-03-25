@@ -1,28 +1,39 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using restaurangprojekt.Models;
+using restaurangprojekt.Services;
+using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 
 namespace restaurangprojekt.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly BookingCustomerService _bookingService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, BookingCustomerService bookingService)
         {
             _logger = logger;
+            _bookingService = bookingService;
         }
 
-        public IActionResult Index()
+        // HÄR laddar vi bord från API:t och skickar till ViewBag
+        public async Task<IActionResult> Index()
         {
+            ViewBag.Tables = await _bookingService.GetAvailableTablesAsync();
             return View();
         }
 
         public IActionResult Menu()
         {
-            return View();
+            return RedirectToAction("Menu", "Product");
         }
 
+        public IActionResult Drinks()
+        {
+            return RedirectToAction("Dryckesmeny", "Product");
+        }
 
         public IActionResult Privacy()
         {
@@ -44,6 +55,10 @@ namespace restaurangprojekt.Controllers
             return RedirectToAction("Index", "Product");
         }
 
+        public IActionResult Dinnertable()
+        {
+            return RedirectToAction("Index", "Dinnertable");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

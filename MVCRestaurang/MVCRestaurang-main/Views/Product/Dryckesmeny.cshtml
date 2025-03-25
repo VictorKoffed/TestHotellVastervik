@@ -1,0 +1,47 @@
+﻿@model IEnumerable<restaurangprojekt.Models.Product>
+
+@{
+    ViewData["Title"] = "Dryckesmeny";
+    var alkoholhaltigt = Model.Where(p => p.Price > 50).ToList();
+    var alkoholfritt = Model.Where(p => p.Price <= 50).ToList();
+}
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/drycker.css" />
+</head>
+<body>
+
+    <div class="menu-wrapper">
+        <div class="menu-section">
+            <h1 class="menu-title">Dryckesmeny</h1>
+
+            <section class="category">
+                <h2>Med alkohol</h2>
+                @foreach (var item in alkoholhaltigt)
+                {
+                    <div class="menu-item">
+                        <span class="item-name">@item.ProductName</span>
+                        <span class="item-price">@item.Price.ToString("0.00") kr</span>
+                    </div>
+                }
+            </section>
+
+            <section class="category">
+                <h2>Alkoholfritt</h2>
+                @foreach (var item in alkoholfritt)
+                {
+                    <div class="menu-item">
+                        <span class="item-name">@item.ProductName</span>
+                        <span class="item-price">@item.Price.ToString("0.00") kr</span>
+                    </div>
+                }
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

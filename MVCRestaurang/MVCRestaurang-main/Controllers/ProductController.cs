@@ -108,5 +108,44 @@ namespace restaurangprojekt.Controllers
 
             return BadRequest();
         }
+
+        // 🔸 Visar endast produkter från kategorin "Dryckesmeny"
+        public async Task<IActionResult> Dryckesmeny()
+        {
+            var drinks = await _productService.GetDryckesmenyAsync();
+            return View(drinks);
+        }
+        // 🔸 Visar endast produkter från kategorin "Förrätt"
+        public async Task<IActionResult> Forratter()
+        {
+            var forratter = await _productService.GetForratterAsync();
+            return View(forratter);
+        }
+
+        // 🔸 Visar endast produkter från kategorin "Varmrätt"
+        public async Task<IActionResult> Varmratter()
+        {
+            var varmratter = await _productService.GetVarmratterAsync();
+            return View(varmratter);
+        }
+
+        // 🔸 Visar endast produkter från kategorin "Dessert"
+        public async Task<IActionResult> Desserter()
+        {
+            var desserter = await _productService.GetDesserterAsync();
+            return View(desserter);
+        }
+
+        // 🔸 Visar alla menyprodukter samlat
+        public async Task<IActionResult> Menu()
+        {
+            ViewBag.Forratter = await _productService.GetForratterAsync();
+            ViewBag.Varmratter = await _productService.GetVarmratterAsync();
+            ViewBag.Desserter = await _productService.GetDesserterAsync();
+            ViewBag.Drycker = await _productService.GetDryckesmenyAsync();
+
+            return View();
+        }
     }
+
 }

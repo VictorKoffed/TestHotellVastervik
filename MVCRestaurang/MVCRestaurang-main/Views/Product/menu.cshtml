@@ -1,0 +1,59 @@
+﻿@model IEnumerable<restaurangprojekt.Models.Product>
+
+@{
+    ViewData["Title"] = "Meny";
+    var forratter = ViewBag.Forratter as IEnumerable<restaurangprojekt.Models.Product>;
+    var varmratter = ViewBag.Varmratter as IEnumerable<restaurangprojekt.Models.Product>;
+    var desserter = ViewBag.Desserter as IEnumerable<restaurangprojekt.Models.Product>;
+}
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/menuorder.css" />
+</head>
+<body>
+
+    <div class="menu-wrapper">
+        <div class="menu-section">
+            <h1 class="menu-title">Restaurangmeny</h1>
+
+            <section class="category">
+                <h2>Förrätter</h2>
+                @foreach (var item in forratter)
+                {
+                    <div class="menu-item">
+                        <span class="item-name">@item.ProductName</span>
+                        <span class="item-price">@item.Price.ToString("0.00") kr</span>
+                    </div>
+                }
+            </section>
+
+            <section class="category">
+                <h2>Varmrätter</h2>
+                @foreach (var item in varmratter)
+                {
+                    <div class="menu-item">
+                        <span class="item-name">@item.ProductName</span>
+                        <span class="item-price">@item.Price.ToString("0.00") kr</span>
+                    </div>
+                }
+            </section>
+
+            <section class="category">
+                <h2>Desserter</h2>
+                @foreach (var item in desserter)
+                {
+                    <div class="menu-item">
+                        <span class="item-name">@item.ProductName</span>
+                        <span class="item-price">@item.Price.ToString("0.00") kr</span>
+                    </div>
+                }
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>

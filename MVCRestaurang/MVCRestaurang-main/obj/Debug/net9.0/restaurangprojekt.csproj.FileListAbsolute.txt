@@ -708,7 +708,6 @@ C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main
 C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\restaurangprojekt.genruntimeconfig.cache
 C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\ref\restaurangprojekt.dll
 C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\twx7yqdazr-67cltgxuj4.gz
-C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\7m7ne3v2d5-twjwts3wd2.gz
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\bin\Debug\net9.0\appsettings.json
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\bin\Debug\net9.0\restaurangprojekt.staticwebassets.runtime.json
@@ -813,3 +812,6 @@ C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\restaurangprojekt.pdb
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\restaurangprojekt.genruntimeconfig.cache
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\ref\restaurangprojekt.dll
+C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\7m7ne3v2d5-mr0tv1ezsn.gz
+C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\gcnh9ngkzl-vx86kxr2uy.gz
+C:\Users\filip\Desktop\TestHotellVastervik-main\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\dnpfkinjdi-6flkxuad1v.gz

@@ -1,28 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\mvcrestaurang\\mvcrestaurang-main\\views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|solutionrelative:views\\order\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\mvcrestaurang\\mvcrestaurang-main\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|solutionrelative:views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\mvcrestaurang\\mvcrestaurang-main\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\mvcrestaurang\\mvcrestaurang-main\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\mvcrestaurang\\mvcrestaurang-main\\views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{AB703B09-99D6-451A-8782-BB36570EC1A1}|restaurangprojekt.csproj|solutionrelative:views\\order\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\filip\\Desktop\\TestHotellVastervik-main\\MVCRestaurang\\MVCRestaurang-main\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -30,28 +9,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Views\\Order\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\Index.cshtml",
-              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Views\\Order\\Index.cshtml",
-              "RelativeToolTip": "Views\\Order\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T16:20:04.465Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:84591601:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:84591601:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
             },
             {
               "$type": "Bookmark",
@@ -100,56 +94,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1040628595:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "History.cshtml",
-              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Views\\Order\\History.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\History.cshtml",
-              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Views\\Order\\History.cshtml",
-              "RelativeToolTip": "Views\\Order\\History.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T16:21:05.983Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "OrderService.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Services\\OrderService.cs",
-              "RelativeDocumentMoniker": "Services\\OrderService.cs",
-              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Services\\OrderService.cs",
-              "RelativeToolTip": "Services\\OrderService.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAIAxwGwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T16:03:56.631Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "Controllers\\OrderController.cs",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAxwLQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T15:42:35.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Views\\Order\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Order\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\Views\\Order\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Order\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T15:37:08.818Z"
             }
           ]
         }

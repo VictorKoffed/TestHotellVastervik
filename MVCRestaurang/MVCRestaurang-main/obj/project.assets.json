@@ -55,23 +55,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\meist\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\filip\\.nuget\\packages\\": {},
+    "D:\\visualstudioshare\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
+      "projectUniqueName": "C:\\Users\\filip\\Desktop\\TestHotellVastervik-main\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
       "projectName": "restaurangprojekt",
-      "projectPath": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
-      "packagesPath": "C:\\Users\\meist\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\",
+      "projectPath": "C:\\Users\\filip\\Desktop\\TestHotellVastervik-main\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
+      "packagesPath": "C:\\Users\\filip\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\filip\\Desktop\\TestHotellVastervik-main\\MVCRestaurang\\MVCRestaurang-main\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\visualstudioshare\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\meist\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\filip\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -79,6 +79,8 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -60,5 +60,44 @@ namespace restaurangprojekt.Services
             var response = await _httpClient.DeleteAsync($"{baseUrl}/{productId}");
             return response.IsSuccessStatusCode;
         }
+
+        // 🔹 Hämta endast dryckesmenyn
+        public async Task<IEnumerable<Product>?> GetDryckesmenyAsync()
+        {
+            var response = await _httpClient.GetAsync($"{baseUrl}/category/Dryckesmeny");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
+        }
+        // 🔹 Hämta endast förrätter
+        public async Task<IEnumerable<Product>?> GetForratterAsync()
+        {
+            var response = await _httpClient.GetAsync($"{baseUrl}/search?category=Förrätt");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
+        }
+
+        // 🔹 Hämta endast varmrätter
+        public async Task<IEnumerable<Product>?> GetVarmratterAsync()
+        {
+            var response = await _httpClient.GetAsync($"{baseUrl}/search?category=varmrätt");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
+        }
+
+        // 🔹 Hämta endast desserter
+        public async Task<IEnumerable<Product>?> GetDesserterAsync()
+        {
+            var response = await _httpClient.GetAsync($"{baseUrl}/search?category=dessert");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
+        }
     }
 }
