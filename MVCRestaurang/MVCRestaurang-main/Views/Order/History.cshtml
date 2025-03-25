@@ -1,0 +1,33 @@
+﻿@model IEnumerable<restaurangprojekt.Models.Order>
+
+@{
+    ViewData["Title"] = "Slutförda Ordrar (Historik)";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<a asp-action="Index" class="btn btn-secondary">Tillbaka till Aktiva Ordrar</a>
+
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>OrderID</th>
+            <th>UserID</th>
+            <th>RoomID</th>
+            <th>OrderTime</th>
+            <th>TotalSum</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.UserID</td>
+                <td>@order.RoomID</td>
+                <td>@order.OrderTime.ToString("g")</td>
+                <td>@order.TotalSum.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>

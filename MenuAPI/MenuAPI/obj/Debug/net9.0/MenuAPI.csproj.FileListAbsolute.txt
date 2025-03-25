@@ -334,7 +334,6 @@ C:\Users\meist\Documents\GitHub\TestHotellVastervik\MenuAPI\MenuAPI\obj\Debug\ne
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.csproj.Up2Date
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.genruntimeconfig.cache
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MenuAPI\MenuAPI\obj\Debug\net9.0\ref\MenuAPI.dll
-C:\Users\meist\Documents\GitHub\TestHotellVastervik\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\bin\Debug\net9.0\appsettings.Development.json
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\bin\Debug\net9.0\appsettings.json
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\bin\Debug\net9.0\MenuAPI.staticwebassets.endpoints.json
@@ -504,3 +503,4 @@ C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\MenuAPI.genruntimeconfig.cache
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\ref\MenuAPI.dll
 C:\Users\meist\Desktop\SOS100 Gruppprojekt\Våra APIer\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MenuAPI\MenuAPI\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

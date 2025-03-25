@@ -1,0 +1,27 @@
+﻿@model restaurangprojekt.Models.CreateOrderDto
+
+@{
+    ViewData["Title"] = "Skapa ny order";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="UserID"></label>
+        <input asp-for="UserID" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="RoomID"></label>
+        <input asp-for="RoomID" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="LunchQuantity"></label>
+        <input asp-for="LunchQuantity" class="form-control" />
+    </div>
+    <div class="form-group form-check">
+        <input asp-for="IsRoomService" class="form-check-input" />
+        <label asp-for="IsRoomService" class="form-check-label"></label>
+    </div>
+    <button type="submit" class="btn btn-success">Spara order</button>
+</form>

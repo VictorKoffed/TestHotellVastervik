@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MenuAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\menuapi\\menuapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\menuapi\\menuapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\menuapi\\menuapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0136ADCF-F0E2-4CD5-933F-E011C513CC38}|MenuAPI\\MenuAPI.csproj|solutionrelative:menuapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,29 +78,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MenuAPI\\MenuAPI\\Controllers\\OrderController.cs",
               "RelativeDocumentMoniker": "MenuAPI\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MenuAPI\\MenuAPI\\Controllers\\OrderController.cs",
               "RelativeToolTip": "MenuAPI\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAswLAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAvwKcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:12:10.958Z",
+              "WhenOpened": "2025-03-25T15:32:07.244Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Models\\Order.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MenuAPI\\MenuAPI\\Models\\Order.cs",
               "RelativeDocumentMoniker": "MenuAPI\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\MenuAPI\\MenuAPI\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MenuAPI\\MenuAPI\\Models\\Order.cs",
               "RelativeToolTip": "MenuAPI\\Models\\Order.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBMAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T20:10:51.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T15:21:43.851Z"
             }
           ]
         }

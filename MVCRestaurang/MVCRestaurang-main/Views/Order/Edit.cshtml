@@ -1,0 +1,30 @@
+﻿@model restaurangprojekt.Models.CreateOrderDto
+
+@{
+    ViewData["Title"] = "Edit Order";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="OrderID" value="@Model.OrderID" />
+
+    <div class="form-group">
+        <label for="UserID">User ID</label>
+        <input type="number" class="form-control" id="UserID" name="UserID" value="@Model.UserID" required />
+    </div>
+    <div class="form-group">
+        <label for="RoomID">Room ID</label>
+        <input type="number" class="form-control" id="RoomID" name="RoomID" value="@Model.RoomID" required />
+    </div>
+    <div class="form-group">
+        <label for="IsRoomService">Room Service</label>
+        <input type="checkbox" class="form-control" id="IsRoomService" name="IsRoomService" checked="@Model.IsRoomService" />
+    </div>
+    <div class="form-group">
+        <label for="LunchQuantity">Lunch Quantity</label>
+        <input type="number" class="form-control" id="LunchQuantity" name="LunchQuantity" value="@Model.LunchQuantity" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Order</button>
+</form>

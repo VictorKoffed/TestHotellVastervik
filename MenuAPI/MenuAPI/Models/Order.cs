@@ -20,7 +20,6 @@ namespace MenuAPI.Models
         public bool IsCompleted { get; set; } = false;
 
         // Navigationsproperty
-        [JsonIgnore]
         public ICollection<OrderProduct> OrderProducts { get; set; } = new List<OrderProduct>(); // 🛠 Fixa null-problemet
     }
 }

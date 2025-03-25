@@ -1,0 +1,17 @@
+﻿@model restaurangprojekt.Models.Order
+
+@{
+    ViewData["Title"] = "Ta bort order";
+}
+
+<h2>Bekräfta borttagning</h2>
+
+<div class="alert alert-danger">
+    <strong>Är du säker på att du vill ta bort ordern med ID @Model.OrderID?</strong>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="id" value="@Model.OrderID" />
+    <button type="submit" class="btn btn-danger">Ja, ta bort</button>
+    <a asp-action="Index" class="btn btn-secondary">Avbryt</a>
+</form>

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sRs+tP6egFk=",
+  "dgSpecHash": "4cWiCd/sAf4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\filip\\Desktop\\TestHotellVastervik-main\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
+  "projectFilePath": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\restaurangprojekt.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\filip\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "C:\\Users\\meist\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
   ],
   "logs": []
 }

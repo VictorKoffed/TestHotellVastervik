@@ -1,23 +1,100 @@
 ﻿@model restaurangprojekt.Models.Order
 
-<h2>Orderdetaljer</h2>
-<table>
-    <tr><th>Order ID:</th><td>@Model.OrderID</td></tr>
-    <tr><th>Orderdatum:</th><td>@Model.OrderTime</td></tr>
-    <tr><th>Totalt pris:</th><td>@Model.TotalSum kr</td></tr>
-    <tr><th>RoomService:</th><td>@(Model.IsRoomService ? "Ja" : "Nej")</td></tr>
-</table>
+@{
+    ViewData["Title"] = "Orderdetaljer";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <p><strong>Order ID:</strong> @Model.OrderID</p>
+        <p><strong>User ID:</strong> @Model.UserID</p>
+        <p><strong>Room ID:</strong> @Model.RoomID</p>
+        <p><strong>Total Sum:</strong> @Model.TotalSum.ToString("C")</p>
+        <p><strong>Lunch Quantity:</strong> @Model.LunchQuantity</p>
+        <p><strong>Room Service:</strong> @(Model.IsRoomService ? "Ja" : "Nej")</p>
+        <p><strong>Order Time:</strong> @Model.OrderTime.ToString("g")</p>
+    </div>
+</div>
 
 <h3>Produkter i ordern</h3>
-<table>
-    <tr><th>Produkt ID</th><th>Antal</th></tr>
-    @foreach (var item in Model.OrderProducts)
-    {
-        <tr>
-            <td>@item.ProductID_FK</td>
-            <td>@item.Amount</td>
-        </tr>
-    }
-</table>
 
-<a href="@Url.Action("Index", "Home")">Tillbaka till startsidan</a>
+@if (Model.OrderProducts != null && Model.OrderProducts.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Produkt ID</th>
+                <th>Namn</th>
+                <th>Kategori</th>
+                <th>Pris</th>
+                <th>Antal</th>
+                <th>Uppdatera antal</th>
+                <th>Ta bort</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prod in Model.OrderProducts)
+            {
+                <tr>
+                    <td>@prod.ProductID_FK</td>
+                    <td>@(prod.Product?.ProductName ?? "N/A")</td>
+                    <td>@(prod.Product?.Category ?? "N/A")</td>
+                    <td>@(prod.Product != null ? prod.Product.Price.ToString("C") : "0 kr")</td>
+                    <td>@prod.Amount</td>
+                    <td>
+                        <form asp-action="UpdateProductAmount" method="post" class="d-flex align-items-center">
+                            <input type="hidden" name="orderId" value="@Model.OrderID" />
+                            <input type="hidden" name="productId" value="@prod.ProductID_FK" />
+                            <input type="number" name="amount" class="form-control form-control-sm" value="@prod.Amount" min="1" required style="width:80px;" />
+                            <button type="submit" class="btn btn-warning btn-sm ms-2">Ändra</button>
+                        </form>
+                    </td>
+                    <td>
+                        <form asp-action="RemoveProduct" asp-route-orderId="@Model.OrderID" asp-route-productId="@prod.ProductID_FK" method="post">
+                            <button type="submit" class="btn btn-danger btn-sm">Ta bort</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p class="text-muted">Det finns inga produkter i denna order.</p>
+}
+
+<div class="card mb-4">
+    <div class="card-body">
+        <h4>Lägg till produkt</h4>
+        <form asp-action="AddProduct" method="post">
+            <input type="hidden" name="orderId" value="@Model.OrderID" />
+            <div class="form-group">
+                <label for="dto_ProductID">Produkt</label>
+                <select name="dto.ProductID" class="form-control" required>
+                    <option value="">Välj produkt</option>
+                    @foreach (var product in ViewBag.Products)
+                    {
+                        <option value="@product.ProductID">@product.ProductName (@product.Price.ToString("C"))</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group mt-2">
+                <label for="dto_Amount">Antal</label>
+                <input name="dto.Amount" type="number" class="form-control" min="1" value="1" required />
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Lägg till produkt</button>
+        </form>
+    </div>
+</div>
+
+<div class="mb-4">
+    <form asp-action="Checkout" method="post">
+        <input type="hidden" name="orderId" value="@Model.OrderID" />
+        <button type="submit" class="btn btn-success">Slutför order</button>
+    </form>
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Tillbaka till ordrar</a>

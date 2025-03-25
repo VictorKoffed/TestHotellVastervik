@@ -11,5 +11,10 @@ namespace restaurangprojekt.Models
         public int ProductID_FK { get; set; }
 
         public int Amount { get; set; }
+
+        // Navigationsproperties
+        [JsonIgnore] // Undvik cirkulär referens tillbaka till Order
+        public Order? Order { get; set; }
+        public Product? Product { get; set; }
     }
 }

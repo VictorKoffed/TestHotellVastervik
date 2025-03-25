@@ -131,32 +131,72 @@ namespace MenuAPI.Controllers
         public async Task<IActionResult> RemoveProductFromOrder(int orderId, int productId)
         {
             var orderProduct = await _context.OrderProducts
+                .Include(op => op.Product)
                 .FirstOrDefaultAsync(op => op.OrderID == orderId && op.ProductID == productId);
 
             if (orderProduct == null)
                 return NotFound("Product not found in order");
 
+            var order = await _context.Orders.FindAsync(orderId);
+            if (order == null)
+                return NotFound("Order not found");
+
+            // Uppdatera totalsumman
+            order.TotalSum -= (orderProduct.Product.Price ?? 0) * orderProduct.Amount;
+
+            // Ta bort produkten
             _context.OrderProducts.Remove(orderProduct);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok(new { order.TotalSum });
         }
 
         // ✅ Avsluta order (beställa den)
         [HttpPost("{orderId}/checkout")]
         public async Task<IActionResult> CheckoutOrder(int orderId)
         {
-            var order = await _context.Orders
-                .Include(o => o.OrderProducts)
-                .ThenInclude(op => op.Product)
-                .FirstOrDefaultAsync(o => o.OrderID == orderId);
+            var order = await _context.Orders.FindAsync(orderId);
 
             if (order == null)
                 return NotFound("Order not found");
 
-            // Här kan du t.ex. skicka ordern till ett externt API eller markera den som betald
-            return Ok(new { Message = "Order confirmed", Order = order });
+            order.IsCompleted = true; // Markera ordern som slutförd
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new { order.OrderID, order.IsCompleted });
         }
+
+        [HttpPut("{orderId}/updateProductAmount")]
+        public async Task<IActionResult> UpdateProductAmount(int orderId, [FromBody] AddProductToOrderDto model)
+        {
+            // Hämta OrderProduct + Product
+            var orderProduct = await _context.OrderProducts
+                .Include(op => op.Product)
+                .FirstOrDefaultAsync(op => op.OrderID == orderId && op.ProductID == model.ProductID);
+
+            if (orderProduct == null)
+                return NotFound("Product not found in order");
+
+            // Kontrollera att priset inte är null
+            if (!orderProduct.Product.Price.HasValue)
+                return BadRequest("Product price is null.");
+
+            // Hämta ordern
+            var order = await _context.Orders.FindAsync(orderId);
+            if (order == null)
+                return NotFound("Order not found.");
+
+            // Uppdatera totalsumman:
+            order.TotalSum -= (orderProduct.Product.Price.Value * orderProduct.Amount);
+            orderProduct.Amount = model.Amount; // nya antalet
+            order.TotalSum += (orderProduct.Product.Price.Value * model.Amount);
+
+            await _context.SaveChangesAsync();
+
+            return Ok(orderProduct);
+        }
+
     }
 
     // DTO-klasser för enklare dataöverföring

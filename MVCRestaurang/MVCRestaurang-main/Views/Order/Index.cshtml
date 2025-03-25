@@ -1,16 +1,39 @@
-﻿@model List<restaurangprojekt.Models.Order>
+﻿@model IEnumerable<restaurangprojekt.Models.Order>
 
-<h2>Ordrar</h2>
-<table>
-    <tr><th>Order ID</th><th>Datum</th><th>Totalt</th><th>RoomService</th></tr>
-    @foreach (var order in Model)
-    {
+@{
+    ViewData["Title"] = "Aktiva Ordrar";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<a asp-action="Create" class="btn btn-primary">Skapa ny order</a>
+<a asp-action="History" class="btn btn-secondary ms-2">Visa Historik</a>
+
+<table class="table mt-3">
+    <thead>
         <tr>
-            <td>@order.OrderID</td>
-            <td>@order.OrderTime.ToShortDateString()</td>
-            <td>@order.TotalSum kr</td>
-            <td>@(order.IsRoomService ? "Ja" : "Nej")</td>
+            <th>OrderID</th>
+            <th>UserID</th>
+            <th>RoomID</th>
+            <th>OrderTime</th>
+            <th>TotalSum</th>
+            <th>Åtgärder</th>
         </tr>
-    }
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.UserID</td>
+                <td>@order.RoomID</td>
+                <td>@order.OrderTime.ToString("g")</td>
+                <td>@order.TotalSum.ToString("C")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@order.OrderID">Detaljer</a> |
+                    <a asp-action="Delete" asp-route-id="@order.OrderID">Ta bort</a>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>
-<a href="@Url.Action("Create")">Skapa Order</a>
