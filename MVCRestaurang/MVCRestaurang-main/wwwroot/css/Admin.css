@@ -1,0 +1,133 @@
+﻿/* ADMIN DESIGN – Modern varm stil */
+:root {
+    --primary: #CABA9C;
+    --secondary: #D9D6CE;
+    --light-bg: #F1EEEE;
+    --dark-text: #3D3D3D;
+    --card-bg: #FFFFFF;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #6c757d;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.admin-container {
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    padding: 20px;
+}
+
+/* Titel */
+.admin-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Lägg till-knapp */
+.admin-actions {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Knappstilar */
+.admin-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+.admin-btn-add {
+    background-color: var(--primary);
+}
+
+    .admin-btn-add:hover {
+        background-color: #b59a85;
+    }
+
+.admin-btn-secondary {
+    background-color: var(--info);
+}
+
+.admin-btn-warning {
+    background-color: var(--warning);
+    color: #333;
+}
+
+.admin-btn-danger {
+    background-color: var(--danger);
+}
+
+/* Tabell */
+.admin-table-wrapper {
+    overflow-x: auto;
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .admin-table th,
+    .admin-table td {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+    }
+
+    .admin-table thead {
+        background-color: var(--secondary);
+    }
+
+/* Produktbild */
+.admin-img {
+    width: 60px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Åtgärder */
+.admin-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Responsivitet */
+@media (max-width: 768px) {
+    .admin-action-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .admin-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .admin-table th, .admin-table td {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
