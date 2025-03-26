@@ -9,4 +9,6 @@ Test till att ladda upp filer till GitHub Hotell projekt
 9. Fixa bokningslogic till Bokningar
 10. Hämta rum bokingar?
 
-ändring test
+Buggfixar: 
+1. Booking/Admin create fungerar inte.
+2. 
