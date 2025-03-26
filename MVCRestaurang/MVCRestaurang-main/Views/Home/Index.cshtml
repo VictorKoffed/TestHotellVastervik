@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var roleID = HttpContextAccessor.HttpContext?.Session?.GetInt32("UserRole");
+    var username = HttpContextAccessor.HttpContext?.Session?.GetString("Username");
+    bool isHomePage = ViewData["Title"]?.ToString() == "Startsida";
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -129,14 +136,36 @@
             <h1><button id="homeButton" class="home-btn">HOTELL LYX</button></h1>
         </div>
         <ul class="nav-links">
-            <li><a asp-controller="Rooms" asp-action="Index">Rum</a></li>
-            <li><a asp-controller="Home" asp-action="Menu">Mat & Dryck</a></li>
-            <li><a asp-controller="Home" asp-action="Event">Event</a></li>
-            <li><a asp-controller="Home" asp-action="Offers">Erbjudanden</a></li>
+            <li><a href="https://informatik1.ei.hv.se/StartGUI/Rooms">Rum</a></li>
+            <li><a href="https://informatik3.ei.hv.se/RestaurangGUI">Mat & Dryck</a></li>
+            <li><a href="https://informatik2.ei.hv.se/MonitoringGUI/Event">Event</a></li>
+            <li><a href="https://informatik2.ei.hv.se/MonitoringGUI/Offer">Erbjudanden</a></li>
+
+            @if (roleID == 1) // Visa Admin endast för behöriga användare
+            {
+                <li><a href="https://informatik2.ei.hv.se/MonitoringGUI/Dashboard">Admin</a></li>
+            }
+
+            @if (roleID == 2) // Visa endast för rollid 2 användare
+            {
+                <li><a href="https://informatik1.ei.hv.se/StaffGUI">Bokning & Rum</a></li>
+                <li><a href="https://informatik4.ei.hv.se/CleaningGUI">Städning</a></li>
+            }
+
         </ul>
-        <a href="/Login" class="button login-btn">
-            <img src="~/images/login.png" alt="Logga in" class="login-icon"> Logga in
-        </a>
+        <!-- Inloggningssektion -->
+        @if (!string.IsNullOrEmpty(username))
+        {
+            <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
+                <button type="submit" class="LogoutButton logout-btn">Logga ut</button>
+            </form>
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Login" class="button login-btn">
+                <img src="~/images/login.png" alt="Logga in" class="login-icon"> Logga in
+            </a>
+        }
 
     </nav>
 
