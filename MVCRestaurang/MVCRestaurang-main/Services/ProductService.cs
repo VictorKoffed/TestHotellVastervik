@@ -99,5 +99,14 @@ namespace restaurangprojekt.Services
             var json = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
         }
+
+        public async Task<IEnumerable<Product>?> GetLunchAsync()
+        {
+            var response = await _httpClient.GetAsync($"{baseUrl}/search?category=Lunch");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<IEnumerable<Product>>(json);
+        }
     }
 }

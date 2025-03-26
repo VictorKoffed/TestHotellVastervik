@@ -1,10 +1,15 @@
 ﻿@model IEnumerable<restaurangprojekt.Models.Product>
-
 @{
     ViewData["Title"] = "Dryckesmeny";
     var alkoholhaltigt = Model.Where(p => p.Price > 50).ToList();
     var alkoholfritt = Model.Where(p => p.Price <= 50).ToList();
 }
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/Admin.css" />
+</head>
 
 <!DOCTYPE html>
 <html lang="sv">

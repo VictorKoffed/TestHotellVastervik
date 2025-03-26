@@ -1,5 +1,11 @@
 ﻿@model IEnumerable<restaurangprojekt.Models.Booking>
 
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/Admin.css" />
+</head>
+
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -11,7 +17,7 @@
 
     <section class="admin-product-section">
         <div class="admin-container">
-            <h1 class="admin-title"> Alla Bokningar</h1>
+            <h1 class="admin-title">Alla Bokningar</h1>
 
             <div class="admin-actions">
                 <a asp-action="Create" class="admin-btn admin-btn-add">➕ Skapa ny bokning</a>

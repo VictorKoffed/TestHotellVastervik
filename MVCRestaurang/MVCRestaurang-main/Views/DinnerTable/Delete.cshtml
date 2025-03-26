@@ -1,0 +1,22 @@
+﻿@model restaurangprojekt.Models.DinnerTable
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/DinnerTable.css" />
+</head>
+
+<h2>Delete Dinner Table</h2>
+
+<h4>Are you sure you want to delete this table?</h4>
+<div>
+    <h4>Table ID: @Model.TableID</h4>
+    <p>Seats: @Model.Seats</p>
+    <p>Location: @Model.Location</p>
+</div>
+
+<form asp-action="DeleteConfirmed" asp-controller="DinnerTable" method="post">
+    <input type="hidden" asp-for="TableID" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" asp-controller="DinnerTable" class="btn btn-secondary">Cancel</a>
+</form>

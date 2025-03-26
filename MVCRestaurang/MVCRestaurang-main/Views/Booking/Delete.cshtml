@@ -4,30 +4,31 @@
     ViewData["Title"] = "Booking - Delete";
 }
 
-<h2>Radera bokning</h2>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/Admin.css" />
+</head>
 
-<h3>Är du säker på att du vill radera denna bokning?</h3>
+<section class="admin-container">
+    <h2 class="admin-title">Radera bokning</h2>
 
-<div>
-    <dl class="row">
-        <dt class="col-sm-2">
-            BookingID
-        </dt>
-        <dd class="col-sm-10">
-            @Model.BookingID
-        </dd>
-        <dt class="col-sm-2">
-            UserID
-        </dt>
-        <dd class="col-sm-10">
-            @Model.UserID
-        </dd>
-        <!-- Lägg till fler fält om du vill visa mer info -->
-    </dl>
-</div>
+    <h3>Är du säker på att du vill radera denna bokning?</h3>
 
-<form asp-action="Delete" method="post">
-    <input type="hidden" asp-for="BookingID" />
-    <button type="submit" class="btn btn-danger">Radera</button>
-    <a asp-action="Index">Avbryt</a>
-</form>
+    <div class="admin-table-wrapper">
+        <dl class="row">
+            <dt class="col-sm-2">BookingID</dt>
+            <dd class="col-sm-10">@Model.BookingID</dd>
+
+            <dt class="col-sm-2">UserID</dt>
+            <dd class="col-sm-10">@Model.UserID</dd>
+            <!-- Lägg till fler fält om du vill visa mer info -->
+        </dl>
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="BookingID" />
+        <button type="submit" class="btn btn-danger">Radera</button>
+        <a asp-action="Index" class="btn btn-secondary">Avbryt</a>
+    </form>
+</section>

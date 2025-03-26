@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\bin\Release\net9.0\publish\</_PublishTargetUrl>
+    <History>True|2025-03-26T20:05:24.8456265Z||;True|2025-03-26T20:48:56.4757540+01:00||;True|2025-03-26T20:13:16.9961099+01:00||;True|2025-03-26T20:09:41.7302499+01:00||;True|2025-03-26T17:58:45.7424653+01:00||;True|2025-03-26T17:25:15.8066455+01:00||;True|2025-03-26T17:14:23.8818201+01:00||;True|2025-03-26T17:05:12.4803407+01:00||;True|2025-03-26T17:00:59.7434909+01:00||;True|2025-03-26T16:15:00.1676619+01:00||;True|2025-03-26T15:47:39.2329964+01:00||;True|2025-03-26T15:30:38.3307482+01:00||;True|2025-03-26T14:16:51.2433894+01:00||;True|2025-03-26T14:07:22.2995802+01:00||;True|2025-03-26T13:57:06.8367281+01:00||;True|2025-03-26T13:35:26.2183833+01:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

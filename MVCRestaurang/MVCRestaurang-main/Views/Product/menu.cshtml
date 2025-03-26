@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<restaurangprojekt.Models.Product>
-
 @{
     ViewData["Title"] = "Meny";
     var forratter = ViewBag.Forratter as IEnumerable<restaurangprojekt.Models.Product>;
     var varmratter = ViewBag.Varmratter as IEnumerable<restaurangprojekt.Models.Product>;
     var desserter = ViewBag.Desserter as IEnumerable<restaurangprojekt.Models.Product>;
+    var lunch = ViewBag.Lunch as IEnumerable<restaurangprojekt.Models.Product>;
 }
 
 <!DOCTYPE html>
@@ -51,6 +51,19 @@
                         <span class="item-price">@item.Price.ToString("0.00") kr</span>
                     </div>
                 }
+
+            <section class="category">
+                 <h2>Lunch</h2>
+                 @foreach (var item in lunch)
+                 {
+                     <div class="menu-item">
+                         <span class="item-name">@item.ProductName</span>
+                         <span class="item-price">@item.Price.ToString("0.00") kr</span>
+                     </div>
+                 }
+                </section>
+
+
             </section>
         </div>
     </div>

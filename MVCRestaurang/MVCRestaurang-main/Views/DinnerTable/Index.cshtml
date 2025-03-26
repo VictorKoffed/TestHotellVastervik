@@ -1,0 +1,40 @@
+﻿@model IEnumerable<restaurangprojekt.Models.DinnerTable>
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/DinnerTable.css" />
+</head>
+
+<h2>Dinner Tables</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Table ID</th>
+            <th>Seats</th>
+            <th>Location</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var table in Model)
+        {
+                <tr>
+                    <td>@table.TableID</td>
+                    <td>@table.Seats</td>
+                    <td>@table.Location</td>
+                    <td>
+                        <form asp-action="Delete" asp-controller="DinnerTable" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@table.TableID" />
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                        <a asp-action="Edit" asp-controller="DinnerTable" asp-route-id="@table.TableID" class="btn btn-warning">Edit</a>
+                        <a asp-action="Details" asp-controller="DinnerTable" asp-route-id="@table.TableID" class="btn btn-info">Details</a>
+                    </td>
+                </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" asp-controller="DinnerTable" class="btn btn-success">Create New Table</a>

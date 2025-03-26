@@ -1,0 +1,293 @@
+/* -------------------- */
+/* Hero-sektion         */
+/* -------------------- */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.85); /*Mörkare bild*/
+    }
+
+    .hero button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(202, 186, 156, 0.8);
+        color: white;
+        border: 2px solid white;
+        padding: 15px 35px;
+        font-size: 22px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        font-weight: bold;
+    }
+
+        .hero button:hover {
+            background: rgba(176, 154, 131, 0.9)
+        }
+
+
+/* -------------------- */
+/* Menybeskrivning         */
+/* -------------------- */
+
+.menu-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+    background: #F1EEEE;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+    .menu-section::after {
+        content: "";
+        display: block;
+        height: 30px;
+        background: white;
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+    }
+
+    .menu-section img {
+        width: 450px;
+        height: 350px;
+        border-radius: 250px 250px 0 0;
+        object-fit: cover;
+        display: block;
+    }
+
+.menu-text {
+    flex: 1;
+    text-align: left;
+}
+
+    .menu-text h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: #3D3D3D;
+    }
+
+    .menu-text p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: #3D3D3D;
+    }
+
+/* knappar  */
+.buttons {
+    margin-top: 20px;
+}
+
+    .buttons button {
+        background: #CABA9C;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+        transition: 0.3s ease;
+    }
+
+        .buttons button:hover {
+            background: #B09A83;
+        }
+
+
+
+/* -------------------- */
+/* Resturangbeskrivning */
+/* -------------------- */
+.restaurant-section {
+    background: #CABA9C;
+    padding: 80px 20px;
+    text-align: center;
+    color: #3D3D3D;
+    min-height: 300px;
+    position: relative;
+}
+
+    .restaurant-section h2 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .restaurant-section p {
+        font-size: 18px;
+        line-height: 1.5;
+        max-width: 800px;
+        margin: auto;
+        visibility: visible;
+    }
+
+.restaurant-section {
+    border-bottom: 3px solid #CABA9C;
+}
+
+/* -------------------- */
+/* Öppetider            */
+/* -------------------- */
+.opening-hours {
+    background: #FFFFFF;
+    padding: 40px;
+    text-align: center;
+    border-top: 3px solid #CABA9C;
+}
+
+    .opening-hours h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+
+
+/* MODALEN */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.booking-modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1001;
+    border-radius: 8px;
+}
+
+.modal-content {
+    position: relative;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.booking-modal label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.booking-modal select,
+.booking-modal input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-modal button {
+    background: #CABA9C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+    .booking-modal button:hover {
+        background: #B09A83;
+    }
+
+.booking-modal.active,
+.modal-overlay.active {
+    display: block;
+}
+
+.booking-modal textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* -------------------- */
+/* Anpassning            */
+/* -------------------- */
+@media (max-width: 768px) {
+    .menu-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .menu-section img {
+            width: 80%
+        }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+        nav ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    .hero {
+        height: 50vh;
+    }
+
+        .hero button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+    .restaurant-section h2 {
+        font-size: 26px;
+    }
+
+    .restaurant-section p {
+        font-size: 16px;
+    }
+}
+.buttons {
+    display: flex;
+    gap: 10px; /* Avstånd mellan knapparna */
+}

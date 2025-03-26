@@ -1,0 +1,24 @@
+﻿@model restaurangprojekt.Models.DinnerTable
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/DinnerTable.css" />
+</head>
+
+<h2>Edit Dinner Table</h2>
+
+<form asp-action="Edit" asp-controller="DinnerTable" method="post">
+    <input type="hidden" name="_method" value="PUT" />
+    <input type="hidden" asp-for="TableID" />
+    <div class="form-group">
+        <label for="Seats">Seats</label>
+        <input type="number" asp-for="Seats" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Location">Location</label>
+        <input type="text" asp-for="Location" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" asp-controller="DinnerTable" class="btn btn-secondary">Back to List</a>
+</form>

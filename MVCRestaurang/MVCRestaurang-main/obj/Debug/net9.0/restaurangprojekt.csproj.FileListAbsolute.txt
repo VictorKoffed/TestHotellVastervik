@@ -730,11 +730,7 @@ C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\scopedcss\bundle\restaurangprojekt.styles.css
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\scopedcss\projectbundle\restaurangprojekt.bundle.scp.css
-C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\7m7ne3v2d5-twjwts3wd2.gz
-C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\dax86ox1gt-fqktfnlv4m.gz
-C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\twx7yqdazr-fl2gtcqs4r.gz
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\mfsov4dtcg-61n19gt1b8.gz
-C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\u3q3y1kd6e-kxib2zqzro.gz
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\2l8yrlj5af-t1cqhe9u97.gz
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\ol4gwpioev-c2jlpeoesf.gz
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\0yct92gg9a-sejl45xvog.gz
@@ -805,7 +801,6 @@ C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.restaurangprojekt.props
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.restaurangprojekt.props
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\restaura.64FD8D0A.Up2Date
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\restaurangprojekt.dll
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\refint\restaurangprojekt.dll
@@ -921,3 +916,15 @@ C:\Users\meist\Desktop\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\
 C:\Users\meist\Desktop\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\restaurangprojekt.pdb
 C:\Users\meist\Desktop\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\restaurangprojekt.genruntimeconfig.cache
 C:\Users\meist\Desktop\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\ref\restaurangprojekt.dll
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\gcnh9ngkzl-vx86kxr2uy.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\dnpfkinjdi-6flkxuad1v.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\u3q3y1kd6e-31srjkojxy.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\16r8b04vdz-3r8b2a0bt1.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\2kakz5f4vp-j7r2qe18er.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\dax86ox1gt-1g3lfdghfg.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\nqacxfhi4g-o24wmbqz4s.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\cxl5fltjn0-xk8dw5kdpq.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\he65s4cs37-uespdfinum.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\7m7ne3v2d5-oh6sovqr7i.gz
+C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\obj\Debug\net9.0\compressed\6p3plahi18-crzgac3ps1.gz

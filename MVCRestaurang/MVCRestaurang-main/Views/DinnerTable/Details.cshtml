@@ -1,0 +1,18 @@
+﻿@model restaurangprojekt.Models.DinnerTable
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/DinnerTable.css" />
+</head>
+
+<h2>Dinner Table Details</h2>
+
+<div>
+    <h4>Table ID: @Model.TableID</h4>
+    <p>Seats: @Model.Seats</p>
+    <p>Location: @Model.Location</p>
+</div>
+
+<a asp-action="Edit" asp-controller="DinnerTable" asp-route-id="@Model.TableID" class="btn btn-warning">Edit</a>
+<a asp-action="Index" asp-controller="DinnerTable" class="btn btn-secondary">Back to List</a>

@@ -1,0 +1,128 @@
+﻿/* Grundläggande */
+body {
+    background-color: var(--background-color); /* Mjuk vit bakgrund */
+    color: var(--text-color);
+    font-family: 'Playfair Display', serif;
+    padding-top: 80px; /* Undvik att tabellen hamnar bakom navbaren */
+    margin: 0;
+}
+
+/* Admin-sektion */
+.admin-product-section {
+    margin: 20px;
+}
+
+.admin-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    margin: auto;
+}
+
+.admin-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Tabellstil */
+.admin-table-wrapper {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .admin-table th, .admin-table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--secondary-color);
+        font-size: 16px;
+    }
+
+    .admin-table th {
+        background-color: var(--primary-color);
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .admin-table tr:nth-child(even) {
+        background-color: var(--secondary-color);
+    }
+
+    .admin-table tr:hover {
+        background-color: #eee;
+    }
+
+/* Knappar */
+.admin-btn {
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.admin-btn-add {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.admin-btn-secondary {
+    background-color: #007bff;
+    color: white;
+}
+
+.admin-btn-warning {
+    background-color: #ffc107;
+    color: white;
+}
+
+.admin-btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.admin-btn:hover {
+    opacity: 0.9;
+}
+
+/* Formulär */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+    .form-control:focus {
+        outline: none;
+        border-color: #b59a85;
+    }
+
+/* Tillbakaknapp */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }

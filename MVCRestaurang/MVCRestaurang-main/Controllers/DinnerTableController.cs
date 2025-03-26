@@ -15,12 +15,14 @@ namespace restaurangprojekt.Controllers
             _dinnerTableService = dinnerTableService;
         }
 
+        // GET: DinnerTable/Index
         public async Task<IActionResult> Index()
         {
             var tables = await _dinnerTableService.GetDinnerTablesAsync();
             return View(tables);
         }
 
+        // GET: DinnerTable/Details/5
         public async Task<IActionResult> Details(int id)
         {
             var table = await _dinnerTableService.GetDinnerTableByIdAsync(id);
@@ -30,11 +32,13 @@ namespace restaurangprojekt.Controllers
             return View(table);
         }
 
+        // GET: DinnerTable/Create
         public IActionResult Create()
         {
             return View();
         }
 
+        // POST: DinnerTable/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(DinnerTable table)
@@ -52,6 +56,7 @@ namespace restaurangprojekt.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // GET: DinnerTable/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
             var table = await _dinnerTableService.GetDinnerTableByIdAsync(id);
@@ -61,10 +66,16 @@ namespace restaurangprojekt.Controllers
             return View(table);
         }
 
+        // POST: DinnerTable/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, DinnerTable table)
         {
+            if (id != table.TableID)
+            {
+                return BadRequest("ID mismatch");
+            }
+
             if (!ModelState.IsValid)
                 return View(table);
 
@@ -78,18 +89,10 @@ namespace restaurangprojekt.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        public async Task<IActionResult> Delete(int id)
-        {
-            var table = await _dinnerTableService.GetDinnerTableByIdAsync(id);
-            if (table == null)
-                return NotFound();
-
-            return View(table);
-        }
-
-        [HttpPost, ActionName("Delete")]
+        // POST: DinnerTable/Delete/5
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var success = await _dinnerTableService.DeleteTableAsync(id);
             if (!success)

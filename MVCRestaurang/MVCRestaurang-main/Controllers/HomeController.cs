@@ -27,12 +27,14 @@ namespace restaurangprojekt.Controllers
 
         public IActionResult Menu()
         {
-            return RedirectToAction("Menu", "Product");
+            
+            return Redirect("https://informatik3.ei.hv.se/RestaurangGUI/Product/menu");
         }
 
         public IActionResult Drinks()
         {
-            return RedirectToAction("Dryckesmeny", "Product");
+            
+            return Redirect("https://informatik3.ei.hv.se/RestaurangGUI/Product/Dryckesmeny");
         }
 
         public IActionResult Privacy()
@@ -42,22 +44,26 @@ namespace restaurangprojekt.Controllers
 
         public IActionResult Orders()
         {
-            return RedirectToAction("Details", "Order", new { id = 1 });
+            
+            return Redirect("https://informatik3.ei.hv.se/RestaurangGUI/Order/Details/1");
         }
 
         public IActionResult Bookings()
         {
-            return RedirectToAction("Index", "Booking");
+            
+            return Redirect("https://informatik3.ei.hv.se/RestaurangGUI/Booking/Index");
         }
 
         public IActionResult Products()
         {
-            return RedirectToAction("Index", "Product");
+            
+            return Redirect("https://informatik3.ei.hv.se/RestaurangGUI/Product/Index");
         }
 
         public IActionResult Dinnertable()
         {
-            return RedirectToAction("Index", "Dinnertable");
+            
+            return Redirect("https://informatik3.ei.hv.se/RestaurangGUI/Dinnertable/Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

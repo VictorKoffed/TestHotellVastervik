@@ -2,9 +2,7 @@
 using restaurangprojekt.Services;
 using restaurangprojekt.Models;
 using System.Threading.Tasks;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using System.Text;
+using Microsoft.AspNetCore.Authorization; // För att använda Authorize attributet
 
 namespace restaurangprojekt.Controllers
 {
@@ -18,14 +16,14 @@ namespace restaurangprojekt.Controllers
             _productService = productService;
         }
 
-        // ✅ Visa alla produkter
+        // Visa alla produkter
         public async Task<IActionResult> Index()
         {
             var products = await _productService.GetAllProductsAsync();
             return View(products);
         }
 
-        // ✅ Visa detaljer för en specifik produkt
+        // Visa detaljer för en specifik produkt
         public async Task<IActionResult> Details(int id)
         {
             var product = await _productService.GetProductByIdAsync(id);
@@ -35,15 +33,17 @@ namespace restaurangprojekt.Controllers
             return View(product);
         }
 
-        // ✅ Visa formulär för att skapa en produkt
+        // Visa formulär för att skapa en produkt
+        // [Authorize(Roles = "1, 2")] // Både admin (1) och anställd (2) har åtkomst
         public IActionResult Create()
         {
             return View();
         }
 
-        // ✅ POST: Skapa en ny produkt
+        // POST: Skapa en ny produkt
         [HttpPost]
         [ValidateAntiForgeryToken]
+        // [Authorize(Roles = "1, 2")] // Både admin (1) och anställd (2) har åtkomst
         public async Task<IActionResult> Create(Product product)
         {
             if (ModelState.IsValid)
@@ -57,7 +57,8 @@ namespace restaurangprojekt.Controllers
             return View(product);
         }
 
-        // ✅ Visa formulär för att redigera en produkt
+        // Visa formulär för att redigera en produkt
+        // [Authorize(Roles = "1, 2")] // Både admin (1) och anställd (2) har åtkomst
         public async Task<IActionResult> Edit(int id)
         {
             var product = await _productService.GetProductByIdAsync(id);
@@ -67,9 +68,10 @@ namespace restaurangprojekt.Controllers
             return View(product);
         }
 
-        // ✅ POST: Uppdatera en produkt
+        // POST: Uppdatera en produkt
         [HttpPost]
         [ValidateAntiForgeryToken]
+        // [Authorize(Roles = "1, 2")] // Både admin (1) och anställd (2) har åtkomst
         public async Task<IActionResult> Edit(int id, Product product)
         {
             if (id != product.ProductID)
@@ -87,7 +89,8 @@ namespace restaurangprojekt.Controllers
             return View(product);
         }
 
-        // ✅ Visa bekräftelse på att ta bort produkt
+        // Visa bekräftelse på att ta bort produkt
+        // [Authorize(Roles = "1")] // Endast admin (1) har åtkomst att ta bort produkter
         public async Task<IActionResult> Delete(int id)
         {
             var product = await _productService.GetProductByIdAsync(id);
@@ -97,9 +100,10 @@ namespace restaurangprojekt.Controllers
             return View(product);
         }
 
-        // ✅ POST: Ta bort produkten
+        // POST: Ta bort produkten
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        // [Authorize(Roles = "1")] // Endast admin (1) har åtkomst att ta bort produkter
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var deleted = await _productService.DeleteProductAsync(id);
@@ -109,43 +113,51 @@ namespace restaurangprojekt.Controllers
             return BadRequest();
         }
 
-        // 🔸 Visar endast produkter från kategorin "Dryckesmeny"
+        // Visar endast produkter från kategorin "Dryckesmeny"
         public async Task<IActionResult> Dryckesmeny()
         {
             var drinks = await _productService.GetDryckesmenyAsync();
             return View(drinks);
         }
-        // 🔸 Visar endast produkter från kategorin "Förrätt"
+
+        // Visar endast produkter från kategorin "Förrätt"
         public async Task<IActionResult> Forratter()
         {
             var forratter = await _productService.GetForratterAsync();
             return View(forratter);
         }
 
-        // 🔸 Visar endast produkter från kategorin "Varmrätt"
+        // Visar endast produkter från kategorin "Varmrätt"
         public async Task<IActionResult> Varmratter()
         {
             var varmratter = await _productService.GetVarmratterAsync();
             return View(varmratter);
         }
 
-        // 🔸 Visar endast produkter från kategorin "Dessert"
+        // Visar endast produkter från kategorin "Lunch"
+        public async Task<IActionResult> Lunch()
+        {
+            var lunch = await _productService.GetLunchAsync();
+            return View(lunch);
+        }
+
+        // Visar endast produkter från kategorin "Dessert"
         public async Task<IActionResult> Desserter()
         {
             var desserter = await _productService.GetDesserterAsync();
             return View(desserter);
         }
 
-        // 🔸 Visar alla menyprodukter samlat
+        // Visar alla menyprodukter samlat
         public async Task<IActionResult> Menu()
         {
             ViewBag.Forratter = await _productService.GetForratterAsync();
             ViewBag.Varmratter = await _productService.GetVarmratterAsync();
             ViewBag.Desserter = await _productService.GetDesserterAsync();
             ViewBag.Drycker = await _productService.GetDryckesmenyAsync();
+            ViewBag.Lunch = await _productService.GetLunchAsync();
 
             return View();
         }
     }
-
 }

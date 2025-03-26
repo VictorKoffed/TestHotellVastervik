@@ -5,11 +5,95 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 }
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var roleID = HttpContextAccessor.HttpContext?.Session?.GetInt32("UserRole");
+    var username = HttpContextAccessor.HttpContext?.Session?.GetString("Username");
+    bool isHomePage = ViewData["Title"]?.ToString() == "Startsida";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurang</title>
+    <link rel="stylesheet" href="~/css/NavbarFooter.css" />
+
+</head>
    
  <main>
         @RenderBody()
-    </main>
+ </main>
 
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Hotell Lyx</h3>
+            <p>Strandvägen 12<br>12345 Västervik</p>
+            <strong>Hitta hit</strong>
+        </div>
 
+        <div class="footer-contact">
+            <p><strong>Telefon:</strong> 0490-12345</p>
+            <p><strong>Epost:</strong> vastervik@hotmail.se</p>
+        </div>
 
+        <!--  Nyhetsbrev -->
+        <div class="footer-newsletter">
+            <h3>Anmäl dig till vårt nyhetsbrev</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="E-postadress" required>
+                <button type="submit">Skicka</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<!-- Navigeringsmeny Gäst-->
+<nav>
+    <div class="logo">
+        <img src="~/images/logo.png" alt="Hotell Logo">
+        <h1>HOTELL LYX</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="https://informatik1.ei.hv.se/StartGUI/Rooms">Rum</a></li>
+        <li><a href="https://informatik3.ei.hv.se/RestaurangGUI">Mat & Dryck</a></li>
+        <li><a href="https://informatik2.ei.hv.se/MonitoringGUI/Event">Event</a></li>
+        <li><a href="https://informatik2.ei.hv.se/MonitoringGUI/Offer">Erbjudanden</a></li>
+
+        @if (roleID == 1) // Visa Admin endast för behöriga användare
+        {
+            <li><a href="https://informatik2.ei.hv.se/MonitoringGUI/Dashboard">Admin</a></li>
+            <li><a href="https://informatik3.ei.hv.se/RestaurangGUI/Booking/Index">Bokningar</a></li>
+            <li><a href="https://informatik3.ei.hv.se/RestaurangGUI/DinnerTable/">Bord</a></li>
+            <li><a href="https://informatik3.ei.hv.se/RestaurangGUI/Product">Produkter</a></li>
+        }
+
+        @if (roleID == 2) // Visa endast för rollid 2 användare
+        {
+            <li><a href="https://informatik1.ei.hv.se/StaffGUI">Bokning & Rum</a></li>
+            <li><a href="https://informatik4.ei.hv.se/CleaningGUI">Städning</a></li>
+            <li><a href="https://informatik3.ei.hv.se/RestaurangGUI/Order/">Order</a></li>
+        }
+
+    </ul>
+    <!-- Inloggningssektion -->
+    @if (!string.IsNullOrEmpty(username))
+    {
+        <form asp-controller="Account" asp-action="Logout" method="post" class="logout-form">
+            <button type="submit" class="LogoutButton logout-btn">Logga ut</button>
+        </form>
+    }
+    else
+    {
+        <a asp-controller="Account" asp-action="Login" class="button login-btn">
+            <img src="~/images/login.png" alt="Logga in" class="login-icon"> Logga in
+        </a>
+    }
+
+</nav>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
     

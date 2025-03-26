@@ -1,0 +1,102 @@
+﻿/* Grundläggande */
+body {
+    background-color: var(--background-color); /* Mjuk vit bakgrund */
+    color: var(--text-color);
+    font-family: 'Playfair Display', serif;
+    padding-top: 80px; /* Undvik att tabellen hamnar bakom navbaren */
+}
+
+/* Kortdesign */
+.card {
+    background-color: var(--card-background);
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+}
+
+/* Tabellstil */
+.table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+    .table th, .table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--secondary-color);
+        font-size: 16px;
+    }
+
+    .table th {
+        background-color: var(--primary-color);
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: var(--secondary-color);
+    }
+
+    .table tr:hover {
+        background-color: #eee;
+    }
+
+    .table a {
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .table a:hover {
+            color: #b59a85;
+        }
+
+/* Knappar */
+.btn {
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn:hover {
+    background-color: #b59a85;
+    color: white;
+}
+
+/* Formulär */
+input[type="text"], select {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 150px;
+    font-size: 16px;
+}
+
+    input[type="text"]:focus, select:focus {
+        outline: none;
+        border-color: #b59a85;
+    }
