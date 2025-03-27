@@ -22,7 +22,12 @@
 
         <div class="form-group">
             <label asp-for="TableID_FK" class="form-label">Bordsnummer</label>
-            <input asp-for="TableID_FK" class="form-control" />
+            <select asp-for="TableID_FK" class="form-control">
+                @foreach (var table in ViewBag.Tables)
+                {
+                    <option value="@table.TableID">@table.TableID - @table.Location (Platser: @table.Seats)</option>
+                }
+            </select>
             <span asp-validation-for="TableID_FK" class="text-danger"></span>
         </div>
 

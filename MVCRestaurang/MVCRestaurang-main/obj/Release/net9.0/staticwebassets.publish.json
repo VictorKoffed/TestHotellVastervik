@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "W5DCnXLoa1qum5cWthXe+P4BVxzpiiIfXCDhzsbfUrw=",
+  "Hash": "F8X/P9DSOhl7hsTqNE5HojnHZfSn2v3eJFnHv1WEyRk=",
   "Source": "restaurangprojekt",
   "BasePath": "_content/restaurangprojekt",
   "Mode": "Default",
@@ -794,12 +794,12 @@
       "OriginalItemSpec": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-uespdfinum.gz",
+      "Identity": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-ayjmcei1qh.gz",
       "SourceId": "restaurangprojekt",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/restaurangprojekt",
-      "RelativePath": "css/Order#[.{fingerprint=uespdfinum}]?.css.gz",
+      "RelativePath": "css/Order#[.{fingerprint=ayjmcei1qh}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -808,8 +808,8 @@
       "RelatedAsset": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\css\\Order.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "n8qw1xyhpm",
-      "Integrity": "KY4strPW74/b0WyrnpNrHRZQdYDJtM1Va+fEQ2x11z0=",
+      "Fingerprint": "c855umrh4v",
+      "Integrity": "vI8nSFGEM8o9v0P8DVXX15LcxrjZjDhOgfgru0pTzLQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\css\\Order.css"
@@ -1907,12 +1907,12 @@
       "OriginalItemSpec": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-uespdfinum.br",
+      "Identity": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-ayjmcei1qh.br",
       "SourceId": "restaurangprojekt",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\",
       "BasePath": "_content/restaurangprojekt",
-      "RelativePath": "css/Order#[.{fingerprint=uespdfinum}]?.css.br",
+      "RelativePath": "css/Order#[.{fingerprint=ayjmcei1qh}]?.css.br",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1921,8 +1921,8 @@
       "RelatedAsset": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\css\\Order.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "gf40tjqcro",
-      "Integrity": "lOBQGJuqP5/evPPgn2Dp4xoVEh5CEDbwAoo32/wS8EE=",
+      "Fingerprint": "vadjpldfr5",
+      "Integrity": "F4cGWIUZPC5AKFrIgSGr5QI+vq5AGx8Q4wc4ZTl6wWk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\css\\Order.css"
@@ -3307,8 +3307,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "uespdfinum",
-      "Integrity": "FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=",
+      "Fingerprint": "ayjmcei1qh",
+      "Integrity": "fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Order.css"
@@ -4810,7 +4810,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4865,7 +4865,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4918,7 +4918,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4955,7 +4955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5000,7 +5000,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5047,7 +5047,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5110,7 +5110,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5171,7 +5171,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5216,7 +5216,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5269,7 +5269,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:08:29 GMT"
+          "Value": "Thu, 27 Mar 2025 06:20:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8898,13 +8898,13 @@
       ]
     },
     {
-      "Route": "css/Order.css",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-uespdfinum.gz",
+      "Route": "css/Order.ayjmcei1qh.css",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-ayjmcei1qh.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001213592233"
+          "Quality": "0.001016260163"
         }
       ],
       "ResponseHeaders": [
@@ -8914,19 +8914,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "823"
+          "Value": "983"
         },
         {
           "Name": "ETag",
-          "Value": "\"KY4strPW74/b0WyrnpNrHRZQdYDJtM1Va+fEQ2x11z0=\""
+          "Value": "\"vI8nSFGEM8o9v0P8DVXX15LcxrjZjDhOgfgru0pTzLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -8942,24 +8942,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=\""
+          "Value": "W/\"fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "ayjmcei1qh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Order.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0="
+          "Value": "sha256-fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ="
         }
       ]
     },
     {
-      "Route": "css/Order.css",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-uespdfinum.br",
+      "Route": "css/Order.ayjmcei1qh.css",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-ayjmcei1qh.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.001510574018"
+          "Quality": "0.001237623762"
         }
       ],
       "ResponseHeaders": [
@@ -8969,19 +8977,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "661"
+          "Value": "807"
         },
         {
           "Name": "ETag",
-          "Value": "\"lOBQGJuqP5/evPPgn2Dp4xoVEh5CEDbwAoo32/wS8EE=\""
+          "Value": "\"F4cGWIUZPC5AKFrIgSGr5QI+vq5AGx8Q4wc4ZTl6wWk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -8997,18 +9005,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=\""
+          "Value": "W/\"fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "ayjmcei1qh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Order.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0="
+          "Value": "sha256-fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ="
         }
       ]
     },
     {
-      "Route": "css/Order.css",
+      "Route": "css/Order.ayjmcei1qh.css",
       "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\css\\Order.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -9018,7 +9034,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2428"
+          "Value": "3304"
         },
         {
           "Name": "Content-Type",
@@ -9026,264 +9042,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=\""
+          "Value": "\"fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0="
-        }
-      ]
-    },
-    {
-      "Route": "css/Order.css.br",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-uespdfinum.br",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "661"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lOBQGJuqP5/evPPgn2Dp4xoVEh5CEDbwAoo32/wS8EE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lOBQGJuqP5/evPPgn2Dp4xoVEh5CEDbwAoo32/wS8EE="
-        }
-      ]
-    },
-    {
-      "Route": "css/Order.css.gz",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-uespdfinum.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "823"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KY4strPW74/b0WyrnpNrHRZQdYDJtM1Va+fEQ2x11z0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-KY4strPW74/b0WyrnpNrHRZQdYDJtM1Va+fEQ2x11z0="
-        }
-      ]
-    },
-    {
-      "Route": "css/Order.uespdfinum.css",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-uespdfinum.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001213592233"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "823"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"KY4strPW74/b0WyrnpNrHRZQdYDJtM1Va+fEQ2x11z0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uespdfinum"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Order.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0="
-        }
-      ]
-    },
-    {
-      "Route": "css/Order.uespdfinum.css",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-uespdfinum.br",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.001510574018"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "661"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lOBQGJuqP5/evPPgn2Dp4xoVEh5CEDbwAoo32/wS8EE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "uespdfinum"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Order.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0="
-        }
-      ]
-    },
-    {
-      "Route": "css/Order.uespdfinum.css",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\css\\Order.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2428"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9293,7 +9056,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uespdfinum"
+          "Value": "ayjmcei1qh"
         },
         {
           "Name": "label",
@@ -9301,13 +9064,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0="
+          "Value": "sha256-fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ="
         }
       ]
     },
     {
-      "Route": "css/Order.uespdfinum.css.br",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-uespdfinum.br",
+      "Route": "css/Order.ayjmcei1qh.css.br",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-ayjmcei1qh.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9316,7 +9079,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "661"
+          "Value": "807"
         },
         {
           "Name": "Content-Type",
@@ -9324,11 +9087,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lOBQGJuqP5/evPPgn2Dp4xoVEh5CEDbwAoo32/wS8EE=\""
+          "Value": "\"F4cGWIUZPC5AKFrIgSGr5QI+vq5AGx8Q4wc4ZTl6wWk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9346,7 +9109,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uespdfinum"
+          "Value": "ayjmcei1qh"
         },
         {
           "Name": "label",
@@ -9354,13 +9117,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-lOBQGJuqP5/evPPgn2Dp4xoVEh5CEDbwAoo32/wS8EE="
+          "Value": "sha256-F4cGWIUZPC5AKFrIgSGr5QI+vq5AGx8Q4wc4ZTl6wWk="
         }
       ]
     },
     {
-      "Route": "css/Order.uespdfinum.css.gz",
-      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-uespdfinum.gz",
+      "Route": "css/Order.ayjmcei1qh.css.gz",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-ayjmcei1qh.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9369,7 +9132,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "823"
+          "Value": "983"
         },
         {
           "Name": "Content-Type",
@@ -9377,11 +9140,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KY4strPW74/b0WyrnpNrHRZQdYDJtM1Va+fEQ2x11z0=\""
+          "Value": "\"vI8nSFGEM8o9v0P8DVXX15LcxrjZjDhOgfgru0pTzLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 26 Mar 2025 18:00:30 GMT"
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9399,7 +9162,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "uespdfinum"
+          "Value": "ayjmcei1qh"
         },
         {
           "Name": "label",
@@ -9407,7 +9170,244 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KY4strPW74/b0WyrnpNrHRZQdYDJtM1Va+fEQ2x11z0="
+          "Value": "sha256-vI8nSFGEM8o9v0P8DVXX15LcxrjZjDhOgfgru0pTzLQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/Order.css",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-ayjmcei1qh.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001016260163"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "983"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vI8nSFGEM8o9v0P8DVXX15LcxrjZjDhOgfgru0pTzLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/Order.css",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-ayjmcei1qh.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.001237623762"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F4cGWIUZPC5AKFrIgSGr5QI+vq5AGx8Q4wc4ZTl6wWk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/Order.css",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\wwwroot\\css\\Order.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/Order.css.br",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\publish\\he65s4cs37-ayjmcei1qh.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "807"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"F4cGWIUZPC5AKFrIgSGr5QI+vq5AGx8Q4wc4ZTl6wWk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-F4cGWIUZPC5AKFrIgSGr5QI+vq5AGx8Q4wc4ZTl6wWk="
+        }
+      ]
+    },
+    {
+      "Route": "css/Order.css.gz",
+      "AssetFile": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\MVCRestaurang\\MVCRestaurang-main\\obj\\Release\\net9.0\\compressed\\he65s4cs37-ayjmcei1qh.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "983"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vI8nSFGEM8o9v0P8DVXX15LcxrjZjDhOgfgru0pTzLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 27 Mar 2025 06:30:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vI8nSFGEM8o9v0P8DVXX15LcxrjZjDhOgfgru0pTzLQ="
         }
       ]
     },

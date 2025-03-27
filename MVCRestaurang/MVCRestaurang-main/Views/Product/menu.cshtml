@@ -21,6 +21,17 @@
             <h1 class="menu-title">Restaurangmeny</h1>
 
             <section class="category">
+                <h2>Lunch</h2>
+                @foreach (var item in lunch)
+                {
+                    <div class="menu-item">
+                        <span class="item-name">@item.ProductName</span>
+                        <span class="item-price">@item.Price.ToString("0.00") kr</span>
+                    </div>
+                }
+            </section>
+
+            <section class="category">
                 <h2>Förrätter</h2>
                 @foreach (var item in forratter)
                 {
@@ -51,18 +62,6 @@
                         <span class="item-price">@item.Price.ToString("0.00") kr</span>
                     </div>
                 }
-
-            <section class="category">
-                 <h2>Lunch</h2>
-                 @foreach (var item in lunch)
-                 {
-                     <div class="menu-item">
-                         <span class="item-name">@item.ProductName</span>
-                         <span class="item-price">@item.Price.ToString("0.00") kr</span>
-                     </div>
-                 }
-                </section>
-
 
             </section>
         </div>

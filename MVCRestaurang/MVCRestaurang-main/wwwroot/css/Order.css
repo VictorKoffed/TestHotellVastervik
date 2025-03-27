@@ -24,6 +24,8 @@ body {
 .admin-title {
     font-size: 24px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 /* Tabellstil */
@@ -99,23 +101,60 @@ body {
 }
 
 /* Formulär */
+.form-container {
+    max-width: 600px; /* Gör formuläret smalare */
+    margin: 20px auto; /* Centrerar formuläret på sidan */
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
 .form-group {
     margin-bottom: 15px;
 }
 
 .form-control {
-    width: 100%;
+    width: 100%; /* Anpassar till formulärets bredd */
     padding: 8px;
-    margin: 5px;
+    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
 }
 
     .form-control:focus {
         outline: none;
         border-color: #b59a85;
+        background-color: white;
     }
+
+/* Formulärknappar */
+.form-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.form-btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.form-btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.form-btn:hover {
+    opacity: 0.9;
+}
 
 /* Tillbakaknapp */
 a {

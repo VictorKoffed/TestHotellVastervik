@@ -33,8 +33,10 @@ namespace restaurangprojekt.Controllers
         }
 
         // GET: Booking/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
+            var tables = await _bookingService.GetAvailableTablesAsync();
+            ViewBag.Tables = tables;
             return View();
         }
 
@@ -49,7 +51,6 @@ namespace restaurangprojekt.Controllers
             var createdBooking = await _bookingService.CreateBookingAsync(booking);
             if (createdBooking == null)
             {
-                // Hantera fel, t.ex. returnera ett felmeddelande
                 ModelState.AddModelError("", "Kunde inte skapa bokning.");
                 return View(booking);
             }
@@ -63,6 +64,9 @@ namespace restaurangprojekt.Controllers
             var booking = await _bookingService.GetBookingByIdAsync(id);
             if (booking == null)
                 return NotFound();
+
+            var tables = await _bookingService.GetAvailableTablesAsync();
+            ViewBag.Tables = tables;
 
             return View(booking);
         }
@@ -78,7 +82,6 @@ namespace restaurangprojekt.Controllers
             var success = await _bookingService.UpdateBookingAsync(id, booking);
             if (!success)
             {
-                // Hantera fel
                 ModelState.AddModelError("", "Kunde inte uppdatera bokning.");
                 return View(booking);
             }
@@ -104,7 +107,6 @@ namespace restaurangprojekt.Controllers
             var success = await _bookingService.DeleteBookingAsync(id);
             if (!success)
             {
-                // Hantera fel
                 return Problem("Kunde inte radera bokning.");
             }
 

@@ -156,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uespdfinum</Fingerprint>
-      <Integrity>FgXsSQUv4PZa9X7CPSosj84dnYwu9Nj+ZW+TsQH+kd0=</Integrity>
+      <Fingerprint>ayjmcei1qh</Fingerprint>
+      <Integrity>fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Order.css'))</OriginalItemSpec>
