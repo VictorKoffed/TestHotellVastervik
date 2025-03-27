@@ -1,40 +1,65 @@
 ﻿@model IEnumerable<restaurangprojekt.Models.DinnerTable>
 
+<!DOCTYPE html>
+<html lang="sv">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - My MVC App</title>
-    <link rel="stylesheet" href="~/css/DinnerTable.css" />
+    <title>Matsalsbord</title>
+    <link rel="stylesheet" href="~/css/admin.css" />
 </head>
+<body>
 
-<h2>Dinner Tables</h2>
+    <section class="admin-product-section">
+        <div class="admin-container">
+            <h1 class="admin-title">Matsalsbord</h1>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Table ID</th>
-            <th>Seats</th>
-            <th>Location</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var table in Model)
-        {
-                <tr>
-                    <td>@table.TableID</td>
-                    <td>@table.Seats</td>
-                    <td>@table.Location</td>
-                    <td>
-                        <form asp-action="Delete" asp-controller="DinnerTable" method="post" style="display:inline;">
-                            <input type="hidden" name="id" value="@table.TableID" />
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
-                        <a asp-action="Edit" asp-controller="DinnerTable" asp-route-id="@table.TableID" class="btn btn-warning">Edit</a>
-                        <a asp-action="Details" asp-controller="DinnerTable" asp-route-id="@table.TableID" class="btn btn-info">Details</a>
-                    </td>
-                </tr>
-        }
-    </tbody>
-</table>
+            <div class="admin-actions">
+                <a asp-action="Create" asp-controller="DinnerTable" class="admin-btn admin-btn-add">➕ Skapa nytt bord</a>
+            </div>
 
-<a asp-action="Create" asp-controller="DinnerTable" class="btn btn-success">Create New Table</a>
+            <div class="admin-table-wrapper">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Bordsnummer</th>
+                            <th>Antal platser</th>
+                            <th>Plats</th>
+                            <th>Åtgärder</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model != null && Model.Any())
+                        {
+                            foreach (var table in Model)
+                            {
+                                <tr>
+                                    <td>@table.TableID</td>
+                                    <td>@table.Seats</td>
+                                    <td>@table.Location</td>
+                                    <td>
+                                        <div class="admin-action-buttons">
+                                            <a asp-action="Details" asp-controller="DinnerTable" asp-route-id="@table.TableID" class="admin-btn admin-btn-secondary">Detaljer</a>
+                                            <a asp-action="Edit" asp-controller="DinnerTable" asp-route-id="@table.TableID" class="admin-btn admin-btn-warning">Redigera</a>
+                                            <form asp-action="Delete" asp-controller="DinnerTable" method="post" style="display:inline;">
+                                                <input type="hidden" name="id" value="@table.TableID" />
+                                                <button type="submit" class="admin-btn admin-btn-danger">Ta bort</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="4">Inga bord hittades.</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

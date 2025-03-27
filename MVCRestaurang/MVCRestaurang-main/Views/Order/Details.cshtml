@@ -1,26 +1,26 @@
-﻿<head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title - My MVC App</title>
-    <link rel="stylesheet" href="~/css/Order.css" />
-</head>
-
-@model restaurangprojekt.Models.Order
+﻿@model restaurangprojekt.Models.Order
 
 @{
     ViewData["Title"] = "Orderdetaljer";
 }
 
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Min MVC-app</title>
+    <link rel="stylesheet" href="~/css/Order.css" />
+</head>
+
 <h1>@ViewData["Title"]</h1>
 
 <div class="card mb-4">
     <div class="card-body">
-        <p><strong>Order ID:</strong> @Model.OrderID</p>
-        <p><strong>User ID:</strong> @Model.UserID</p>
-        <p><strong>Room ID:</strong> @Model.RoomID</p>
-        <p><strong>Total Sum:</strong> @Model.TotalSum.ToString("C")</p>
-        <p><strong>Lunch Quantity:</strong> @Model.LunchQuantity</p>
-        <p><strong>Room Service:</strong> @(Model.IsRoomService ? "Ja" : "Nej")</p>
-        <p><strong>Order Time:</strong> @Model.OrderTime.ToString("g")</p>
+        <p><strong>Ordernummer:</strong> @Model.OrderID</p>
+        <p><strong>Användar-ID:</strong> @Model.UserID</p>
+        <p><strong>Rumsnummer:</strong> @Model.RoomID</p>
+        <p><strong>Totalsumma:</strong> @Model.TotalSum.ToString("C")</p>
+        <p><strong>Antal luncher:</strong> @Model.LunchQuantity</p>
+        <p><strong>Rumsservice:</strong> @(Model.IsRoomService ? "Ja" : "Nej")</p>
+        <p><strong>Beställningstid:</strong> @Model.OrderTime.ToString("g")</p>
     </div>
 </div>
 
@@ -28,10 +28,10 @@
 
 @if (Model.OrderProducts != null && Model.OrderProducts.Any())
 {
-    <table class="table table-striped">
+    <table class="admin-table">
         <thead>
             <tr>
-                <th>Produkt ID</th>
+                <th>Produktnummer</th>
                 <th>Namn</th>
                 <th>Kategori</th>
                 <th>Pris</th>
@@ -53,13 +53,13 @@
                         <form asp-action="UpdateProductAmount" method="post" class="d-flex align-items-center">
                             <input type="hidden" name="orderId" value="@Model.OrderID" />
                             <input type="hidden" name="productId" value="@prod.ProductID_FK" />
-                            <input type="number" name="amount" class="form-control form-control-sm" value="@prod.Amount" min="1" required style="width:80px;" />
-                            <button type="submit" class="btn btn-warning btn-sm ms-2">Ändra</button>
+                            <input type="number" name="amount" class="form-control" value="@prod.Amount" min="1" required style="width: 80px;" />
+                            <button type="submit" class="admin-btn admin-btn-warning">Ändra</button>
                         </form>
                     </td>
                     <td>
                         <form asp-action="RemoveProduct" asp-route-orderId="@Model.OrderID" asp-route-productId="@prod.ProductID_FK" method="post">
-                            <button type="submit" class="btn btn-danger btn-sm">Ta bort</button>
+                            <button type="submit" class="admin-btn admin-btn-danger">Ta bort</button>
                         </form>
                     </td>
                 </tr>
@@ -91,7 +91,7 @@ else
                 <label for="dto_Amount">Antal</label>
                 <input name="dto.Amount" type="number" class="form-control" min="1" value="1" required />
             </div>
-            <button type="submit" class="btn btn-primary mt-3">Lägg till produkt</button>
+            <button type="submit" class="admin-btn admin-btn-add mt-3">Lägg till produkt</button>
         </form>
     </div>
 </div>
@@ -99,8 +99,8 @@ else
 <div class="mb-4">
     <form asp-action="Checkout" method="post">
         <input type="hidden" name="orderId" value="@Model.OrderID" />
-        <button type="submit" class="btn btn-success">Slutför order</button>
+        <button type="submit" class="admin-btn admin-btn-success">Slutför order</button>
     </form>
 </div>
 
-<a asp-action="Index" class="btn btn-secondary">Tillbaka till ordrar</a>
+<a asp-action="Index" class="admin-btn admin-btn-secondary">Tillbaka till ordrar</a>

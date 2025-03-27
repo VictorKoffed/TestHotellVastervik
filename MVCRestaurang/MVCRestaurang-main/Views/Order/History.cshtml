@@ -1,38 +1,41 @@
-﻿<head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title - My MVC App</title>
-    <link rel="stylesheet" href="~/css/Order.css" />
-</head>
-@model IEnumerable<restaurangprojekt.Models.Order>
+﻿@model IEnumerable<restaurangprojekt.Models.Order>
 
 @{
     ViewData["Title"] = "Slutförda Ordrar (Historik)";
 }
 
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Min MVC-app</title>
+    <link rel="stylesheet" href="~/css/Order.css" />
+</head>
+
 <h1>@ViewData["Title"]</h1>
 
-<a asp-action="Index" class="btn btn-secondary">Tillbaka till Aktiva Ordrar</a>
+<a asp-action="Index" class="admin-btn admin-btn-secondary">Tillbaka till Aktiva Ordrar</a>
 
-<table class="table mt-3">
-    <thead>
-        <tr>
-            <th>OrderID</th>
-            <th>UserID</th>
-            <th>RoomID</th>
-            <th>OrderTime</th>
-            <th>TotalSum</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var order in Model)
-        {
+<div class="admin-table-wrapper">
+    <table class="admin-table">
+        <thead>
             <tr>
-                <td>@order.OrderID</td>
-                <td>@order.UserID</td>
-                <td>@order.RoomID</td>
-                <td>@order.OrderTime.ToString("g")</td>
-                <td>@order.TotalSum.ToString("C")</td>
+                <th>Ordernummer</th>
+                <th>Användar-ID</th>
+                <th>Rumsnummer</th>
+                <th>Beställningstid</th>
+                <th>Totalsumma</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderID</td>
+                    <td>@order.UserID</td>
+                    <td>@order.RoomID</td>
+                    <td>@order.OrderTime.ToString("g")</td>
+                    <td>@order.TotalSum.ToString("C")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

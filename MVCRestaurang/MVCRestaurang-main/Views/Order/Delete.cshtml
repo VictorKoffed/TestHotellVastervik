@@ -1,24 +1,24 @@
-﻿<head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title - My MVC App</title>
-    <link rel="stylesheet" href="~/css/Order.css" />
-</head>
-
-@model restaurangprojekt.Models.Order
+﻿@model restaurangprojekt.Models.Order
 
 @{
     ViewData["Title"] = "Ta bort order";
 }
 
-<h2>Bekräfta borttagning</h2>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Min MVC-app</title>
+    <link rel="stylesheet" href="~/css/Order.css" />
+</head>
+
+<h2 class="delete-title">Bekräfta borttagning</h2>
 
 <div class="alert alert-danger">
-    <strong>Är du säker på att du vill ta bort ordern med ID @Model.OrderID?</strong>
+    <strong>Är du säker på att du vill ta bort ordern med ordernummer @Model.OrderID?</strong>
 </div>
 
 <form asp-action="DeleteConfirmed" method="post">
     @Html.AntiForgeryToken()
     <input type="hidden" name="id" value="@Model.OrderID" />
-    <button type="submit" class="btn btn-danger">Ja, ta bort</button>
-    <a asp-action="Index" class="btn btn-secondary">Avbryt</a>
+    <button type="submit" class="admin-btn admin-btn-danger">Ja, ta bort</button>
+    <a asp-action="Index" class="admin-btn admin-btn-secondary">Avbryt</a>
 </form>

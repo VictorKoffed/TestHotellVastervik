@@ -28,10 +28,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/meist/Documents/GitHub/TestHotellVastervik/MVCRestaurang/MVCRestaurang-main/Views/BookingCustomer/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ0N1c3RvbWVyXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/meist/Documents/GitHub/TestHotellVastervik/MVCRestaurang/MVCRestaurang-main/Views/Booking/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va2luZ1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,10 +98,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/meist/Documents/GitHub/TestHotellVastervik/MVCRestaurang/MVCRestaurang-main/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/meist/Documents/GitHub/TestHotellVastervik/MVCRestaurang/MVCRestaurang-main/Views/ProductCustomer/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdEN1c3RvbWVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/meist/Documents/GitHub/TestHotellVastervik/MVCRestaurang/MVCRestaurang-main/Views/Product/Create.cshtml]

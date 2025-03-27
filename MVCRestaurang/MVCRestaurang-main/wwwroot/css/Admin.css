@@ -159,3 +159,9 @@ a {
     a:hover {
         text-decoration: underline;
     }
+
+.admin-warning {
+    color: #dc3545;
+    font-weight: bold;
+    margin-bottom: 15px;
+}

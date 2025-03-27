@@ -12,29 +12,11 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>oh6sovqr7i</Fingerprint>
-      <Integrity>JJyD0sxbdejSiQOq+RLB4d/5DwIoWOfO80bWaCP+Wtg=</Integrity>
+      <Fingerprint>2rk8s0b63g</Fingerprint>
+      <Integrity>8hgOFCZ2PEj4lPDLdXtGrUHu2t0PfU/j3wi8ei7YUAg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Admin.css'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DinnerTable.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>restaurangprojekt</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/restaurangprojekt</BasePath>
-      <RelativePath>css/DinnerTable.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>xk8dw5kdpq</Fingerprint>
-      <Integrity>sUCKw/98z3tM44k6NDvGk9rxVYlcFaCP/zwPL6yAGq8=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\DinnerTable.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\drycker.css'))">
       <SourceType>Package</SourceType>
@@ -156,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ayjmcei1qh</Fingerprint>
-      <Integrity>fg1873M+XhzYCmxzF3dvCT8juw5hqUgFq78TXJEnSNQ=</Integrity>
+      <Fingerprint>9f6ugdgw65</Fingerprint>
+      <Integrity>BeAMYgvUgA5qudf86sbuKmNOEF9ErTnCzGV8MWU0VnE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Order.css'))</OriginalItemSpec>

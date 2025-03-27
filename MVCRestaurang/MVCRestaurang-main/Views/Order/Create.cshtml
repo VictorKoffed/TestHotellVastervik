@@ -1,33 +1,40 @@
-﻿<head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title - My MVC App</title>
-    <link rel="stylesheet" href="~/css/Order.css" />
-</head>
-
-@model restaurangprojekt.Models.CreateOrderDto
+﻿@model restaurangprojekt.Models.CreateOrderDto
 
 @{
     ViewData["Title"] = "Skapa ny order";
 }
 
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - Min MVC-app</title>
+    <link rel="stylesheet" href="~/css/Order.css" />
+</head>
+
 <h1>@ViewData["Title"]</h1>
 
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="UserID"></label>
-        <input asp-for="UserID" class="form-control" required />
-    </div>
-    <div class="form-group">
-        <label asp-for="RoomID"></label>
-        <input asp-for="RoomID" class="form-control" required />
-    </div>
-    <div class="form-group">
-        <label asp-for="LunchQuantity"></label>
-        <input asp-for="LunchQuantity" class="form-control" />
-    </div>
-    <div class="form-group form-check">
-        <input asp-for="IsRoomService" class="form-check-input" />
-        <label asp-for="IsRoomService" class="form-check-label"></label>
-    </div>
-    <button type="submit" class="btn btn-success">Spara order</button>
-</form>
+<div class="form-container">
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="UserID">Användar-ID</label>
+            <input asp-for="UserID" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="RoomID">Rumsnummer</label>
+            <input asp-for="RoomID" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LunchQuantity">Antal luncher</label>
+            <input asp-for="LunchQuantity" class="form-control" />
+        </div>
+
+        <div class="form-group form-check">
+            <input asp-for="IsRoomService" class="form-check-input" />
+            <label asp-for="IsRoomService" class="form-check-label">Rumsservice</label>
+        </div>
+
+        <button type="submit" class="admin-btn admin-btn-success">Spara order</button>
+        <a asp-action="Index" class="admin-btn admin-btn-secondary">Tillbaka</a>
+    </form>
+</div>

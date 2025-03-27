@@ -1,18 +1,30 @@
 ﻿@model restaurangprojekt.Models.DinnerTable
 
+<!DOCTYPE html>
+<html lang="sv">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewBag.Title - My MVC App</title>
-    <link rel="stylesheet" href="~/css/DinnerTable.css" />
+    <title>Matsalsbord Detaljer</title>
+    <link rel="stylesheet" href="~/css/admin.css" />
 </head>
+<body>
 
-<h2>Dinner Table Details</h2>
+    <section class="admin-product-section">
+        <div class="admin-container">
+            <h1 class="admin-title">🪑 Matsalsbord Detaljer</h1>
 
-<div>
-    <h4>Table ID: @Model.TableID</h4>
-    <p>Seats: @Model.Seats</p>
-    <p>Location: @Model.Location</p>
-</div>
+            <div class="admin-detail">
+                <h4>Bordsnummer: @Model.TableID</h4>
+                <p><strong>Antal platser:</strong> @Model.Seats</p>
+                <p><strong>Plats:</strong> @Model.Location</p>
+            </div>
 
-<a asp-action="Edit" asp-controller="DinnerTable" asp-route-id="@Model.TableID" class="btn btn-warning">Edit</a>
-<a asp-action="Index" asp-controller="DinnerTable" class="btn btn-secondary">Back to List</a>
+            <div class="admin-action-buttons">
+                <a asp-action="Edit" asp-controller="DinnerTable" asp-route-id="@Model.TableID" class="admin-btn admin-btn-warning">✏️ Redigera</a>
+                <a asp-action="Index" asp-controller="DinnerTable" class="admin-btn admin-btn-secondary">⬅️ Tillbaka till listan</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

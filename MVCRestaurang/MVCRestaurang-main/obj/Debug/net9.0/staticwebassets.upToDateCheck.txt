@@ -21,7 +21,6 @@ C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\css\DinnerTable.css
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\lib\jquery-validation\LICENSE.md
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\css\Menu.css
@@ -70,7 +69,6 @@ C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\lib\jquery\dist\jquery.js
 C:\Users\meist\Documents\GitHub\TestHotellVastervik\MVCRestaurang\MVCRestaurang-main\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
 wwwroot\css\Admin.css
-wwwroot\css\DinnerTable.css
 wwwroot\css\drycker.css
 wwwroot\css\Home.css
 wwwroot\css\Login.css

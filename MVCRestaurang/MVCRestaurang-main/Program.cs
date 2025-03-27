@@ -47,7 +47,6 @@ builder.Services.AddHttpClient<OrderService>();
 builder.Services.AddHttpClient<ProductService>();
 builder.Services.AddHttpClient<DinnerTableService>();
 builder.Services.AddHttpClient<BookingCustomerService>();
-builder.Services.AddHttpClient<ProductCustomerService>();
 
 var app = builder.Build();
 

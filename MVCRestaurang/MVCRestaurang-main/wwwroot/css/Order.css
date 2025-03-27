@@ -1,9 +1,9 @@
 ﻿/* Grundläggande */
 body {
-    background-color: var(--background-color); /* Mjuk vit bakgrund */
+    background-color: var(--background-color);
     color: var(--text-color);
     font-family: 'Playfair Display', serif;
-    padding-top: 80px; /* Undvik att tabellen hamnar bakom navbaren */
+    padding-top: 80px;
     margin: 0;
 }
 
@@ -67,13 +67,15 @@ body {
 
 /* Knappar */
 .admin-btn {
+    display: inline-block;
+    margin: 2px;
     padding: 8px 12px;
-    margin: 5px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
     font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 .admin-btn-add {
@@ -102,8 +104,8 @@ body {
 
 /* Formulär */
 .form-container {
-    max-width: 600px; /* Gör formuläret smalare */
-    margin: 20px auto; /* Centrerar formuläret på sidan */
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
     background-color: white;
     border-radius: 12px;
@@ -115,7 +117,7 @@ body {
 }
 
 .form-control {
-    width: 100%; /* Anpassar till formulärets bredd */
+    width: 100%;
     padding: 8px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -138,8 +140,8 @@ body {
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: all 0.3s ease;
     font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .form-btn-primary {

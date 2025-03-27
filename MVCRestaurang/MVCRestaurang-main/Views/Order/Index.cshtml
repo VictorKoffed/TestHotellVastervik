@@ -1,45 +1,48 @@
-﻿<head>
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title - My MVC App</title>
-    <link rel="stylesheet" href="~/css/Order.css" />
-</head>
-
-@model IEnumerable<restaurangprojekt.Models.Order>
+﻿@model IEnumerable<restaurangprojekt.Models.Order>
 
 @{
     ViewData["Title"] = "Aktiva Ordrar";
 }
 
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My MVC App</title>
+    <link rel="stylesheet" href="~/css/Order.css" />
+</head>
+
 <h1>@ViewData["Title"]</h1>
 
-<a asp-action="Create" class="btn btn-primary">Skapa ny order</a>
-<a asp-action="History" class="btn btn-secondary ms-2">Visa Historik</a>
+<a asp-action="Create" class="admin-btn admin-btn-add">Skapa ny order</a>
+<a asp-action="History" class="admin-btn admin-btn-secondary">Visa Historik</a>
 
-<table class="table mt-3">
-    <thead>
-        <tr>
-            <th>OrderID</th>
-            <th>UserID</th>
-            <th>RoomID</th>
-            <th>OrderTime</th>
-            <th>TotalSum</th>
-            <th>Åtgärder</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var order in Model)
-        {
+<div class="admin-table-wrapper">
+    <table class="admin-table">
+        <thead>
             <tr>
-                <td>@order.OrderID</td>
-                <td>@order.UserID</td>
-                <td>@order.RoomID</td>
-                <td>@order.OrderTime.ToString("g")</td>
-                <td>@order.TotalSum.ToString("C")</td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@order.OrderID">Detaljer</a> |
-                    <a asp-action="Delete" asp-route-id="@order.OrderID">Ta bort</a>
-                </td>
+                <th>Ordernummer</th>
+                <th>Användar-ID</th>
+                <th>Rumsnummer</th>
+                <th>Beställningstid</th>
+                <th>Totalsumma</th>
+                <th>Åtgärder</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var order in Model)
+            {
+                <tr>
+                    <td>@order.OrderID</td>
+                    <td>@order.UserID</td>
+                    <td>@order.RoomID</td>
+                    <td>@order.OrderTime.ToString("g")</td>
+                    <td>@order.TotalSum.ToString("C")</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@order.OrderID" class="admin-btn admin-btn-secondary">Detaljer</a>
+                        <a asp-action="Edit" asp-route-id="@order.OrderID" class="admin-btn admin-btn-warning">Redigera</a>
+                        <a asp-action="Delete" asp-route-id="@order.OrderID" class="admin-btn admin-btn-danger">Ta bort</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
