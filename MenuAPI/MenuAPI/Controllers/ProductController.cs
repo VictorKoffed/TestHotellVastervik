@@ -16,7 +16,7 @@ namespace MenuAPI.Controllers
             _context = context;
         }
 
-        // ✅ Hämta alla produkter
+        // Hämta alla produkter
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
@@ -24,7 +24,7 @@ namespace MenuAPI.Controllers
             return Ok(products);
         }
 
-        // ✅ Hämta en specifik produkt
+        // Hämta en specifik produkt
         [HttpGet("{productId}")]
         public async Task<IActionResult> GetProduct(int productId)
         {
@@ -35,7 +35,7 @@ namespace MenuAPI.Controllers
             return Ok(product);
         }
 
-        // ✅ Sök efter produkter baserat på kategori och/eller produktnamn
+        // Sök efter produkter baserat på kategori och/eller produktnamn
         [HttpGet("search")]
         public async Task<IActionResult> SearchProducts([FromQuery] string? category, [FromQuery] string? name)
         {
@@ -55,7 +55,7 @@ namespace MenuAPI.Controllers
             return Ok(products);
         }
 
-        // ✅ Lägg till en ny produkt
+        // Lägg till en ny produkt
         [HttpPost("create")]
         public async Task<IActionResult> CreateProduct([FromBody] Product model)
         {
@@ -67,7 +67,7 @@ namespace MenuAPI.Controllers
             return CreatedAtAction(nameof(GetProduct), new { productId = model.ProductID }, model);
         }
 
-        // ✅ Uppdatera en produkt
+        // Uppdatera en produkt
         [HttpPut("{productId}")]
         public async Task<IActionResult> UpdateProduct(int productId, [FromBody] Product model)
         {
@@ -86,7 +86,7 @@ namespace MenuAPI.Controllers
             return Ok(product);
         }
 
-        // ✅ Radera en produkt
+        // Radera en produkt
         [HttpDelete("{productId}")]
         public async Task<IActionResult> DeleteProduct(int productId)
         {
@@ -99,7 +99,7 @@ namespace MenuAPI.Controllers
             return NoContent();
         }
 
-        // ✅ Hämta produkter utifrån kategori
+        // Hämta produkter utifrån kategori
         [HttpGet("category/{category}")]
         public async Task<IActionResult> GetProductsByCategory(string category)
         {
@@ -110,7 +110,7 @@ namespace MenuAPI.Controllers
             return Ok(products);
         }
 
-        // ✅ Hämta alla vegetariska produkter
+        // Hämta alla vegetariska produkter
         [HttpGet("vegetarian")]
         public async Task<IActionResult> GetVegetarianProducts()
         {

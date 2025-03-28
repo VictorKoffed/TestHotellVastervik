@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\",
+  "WorkspaceRootPath": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\bookingapi\\models\\dinnertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\bookingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\bookingapi\\models\\dinnertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|solutionrelative:models\\dinnertable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\bookingapi\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\bookingapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\bookingapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\desktop\\sos100 gruppprojekt\\v\u00E5ra apier\\bookingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|c:\\users\\meist\\documents\\github\\testhotellvastervik\\bookingapi\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{890C9D14-A0A9-49FE-8ACB-67AF2C12F5D6}|BookingAPI.csproj|solutionrelative:controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,11 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "DinnerTable.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Models\\DinnerTable.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Models\\DinnerTable.cs",
               "RelativeDocumentMoniker": "Models\\DinnerTable.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Models\\DinnerTable.cs",
+              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Models\\DinnerTable.cs",
               "RelativeToolTip": "Models\\DinnerTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,39 +99,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BookingController.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Controllers\\BookingController.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "Controllers\\BookingController.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Controllers\\BookingController.cs",
+              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Controllers\\BookingController.cs",
               "RelativeToolTip": "Controllers\\BookingController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwIQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwIQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T14:51:45.146Z"
+              "WhenOpened": "2025-03-24T14:51:45.146Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Controllers\\CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T11:06:15.655Z"
+              "WhenOpened": "2025-03-20T11:06:15.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\meist\\Desktop\\SOS100 Gruppprojekt\\V\u00E5ra APIer\\BookingAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\meist\\Documents\\GitHub\\TestHotellVastervik\\BookingAPI\\Program.cs",
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T10:47:53.522Z"
+              "WhenOpened": "2025-03-20T10:47:53.522Z",
+              "EditorCaption": ""
             }
           ]
         }

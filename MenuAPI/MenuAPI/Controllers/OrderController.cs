@@ -16,7 +16,7 @@ namespace MenuAPI.Controllers
             _context = context;
         }
 
-        // ✅ Skapa en ny order för en användare
+        // Skapa en ny order för en användare
         [HttpPost("create")]
         public async Task<IActionResult> CreateOrder([FromBody] CreateOrderDto model)
         {
@@ -37,7 +37,7 @@ namespace MenuAPI.Controllers
             return CreatedAtAction(nameof(GetOrder), new { orderId = order.OrderID }, order);
         }
 
-        // ✅ Hämta en order med alla produkter
+        // Hämta en order med alla produkter
         [HttpGet("{orderId}")]
         public async Task<IActionResult> GetOrder(int orderId)
         {
@@ -52,7 +52,7 @@ namespace MenuAPI.Controllers
             return Ok(order);
         }
 
-        // ✅ Hämta alla ordrar
+        // Hämta alla ordrar
         [HttpGet]
         public async Task<IActionResult> GetAllOrders()
         {
@@ -64,7 +64,7 @@ namespace MenuAPI.Controllers
             return Ok(orders);
         }
 
-        // ✅ Uppdatera en order
+        // Uppdatera en order
         [HttpPut("{orderId}")]
         public async Task<IActionResult> UpdateOrder(int orderId, [FromBody] CreateOrderDto model)
         {
@@ -85,7 +85,7 @@ namespace MenuAPI.Controllers
             return Ok(order);
         }
 
-        // ✅ Ta bort en order
+        // Ta bort en order
         [HttpDelete("{orderId}")]
         public async Task<IActionResult> DeleteOrder(int orderId)
         {
@@ -100,7 +100,7 @@ namespace MenuAPI.Controllers
             return NoContent();
         }
 
-        // ✅ Lägg till en produkt i en order
+        // Lägg till en produkt i en order
         [HttpPost("{orderId}/addProduct")]
         public async Task<IActionResult> AddProductToOrder(int orderId, [FromBody] AddProductToOrderDto model)
         {
@@ -126,7 +126,7 @@ namespace MenuAPI.Controllers
             return Ok(orderProduct);
         }
 
-        // ✅ Ta bort en produkt från en order
+        // Ta bort en produkt från en order
         [HttpDelete("{orderId}/removeProduct/{productId}")]
         public async Task<IActionResult> RemoveProductFromOrder(int orderId, int productId)
         {
@@ -151,7 +151,7 @@ namespace MenuAPI.Controllers
             return Ok(new { order.TotalSum });
         }
 
-        // ✅ Avsluta order (beställa den)
+        // Avsluta order (beställa den)
         [HttpPost("{orderId}/checkout")]
         public async Task<IActionResult> CheckoutOrder(int orderId)
         {
